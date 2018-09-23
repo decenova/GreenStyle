@@ -9,13 +9,15 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-<<<<<<< HEAD
-    <%= link_to 'Đăng ký', "#" %>
-    <%= link_to 'Đăng nhập', "#" %>
-=======
+  <body onLoad='notifyAll("<%= notice %>")'>
     
->>>>>>> tung_branch
+    <% if !current_user %>
+      <%= link_to 'Đăng nhập', new_user_session_path %>
+    <% else %>
+      <%= link_to 'Đăng xuất', destroy_user_session_path, method: 'delete' %>
+      <%= current_user.name %>
+    <% end %>
+    
     <%= yield %>
   </body>
 </html>
