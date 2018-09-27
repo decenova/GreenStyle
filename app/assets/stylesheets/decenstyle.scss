@@ -1,0 +1,65 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+label {
+  display: block;
+  margin: 5px 0px;
+  font-size: 0.9em;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  margin: 5px 0px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1.5em;
+  border: none;
+  border-bottom: 1px solid #333;
+}
+
+/* addition */
+.clearfloat{
+  clear: both;
+}
+.block--absolute {
+  position: absolute;
+}
+.block--position-center {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.group--input{
+  margin: 10px 0px;
+}
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 1.2em;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 0px;
+}
+.btn--width-full{
+  width: 100%;
+}
+.btn--position-right{
+  float: right;
+}
+.btn--type-success{
+  background-color: #43A047;
+  color: #ffffff;
+}
