@@ -1,0 +1,692 @@
+[{
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-convertible-2-matcha-latte-tenkeyless-10341?category=2",
+  "categoryId" : "6", "name": "Filco Majestouch Convertible 2 Matcha Latte (Tenkeyless)",
+  "price": "3.850.000",
+  "imgUrl": "/web/image/product.template/10341/image?unique=5b70abe",
+  "warranty": "60 tháng", "types": ["8", "11", "12"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-convertible-2-matcha-latte-fullsize-10340?category=2",
+  "categoryId" : "6", "name": "Filco Majestouch Convertible 2 Matcha Latte (Fullsize)",
+  "price": "4.180.000",
+  "imgUrl": "/web/image/product.template/10340/image?unique=c8d66e1",
+  "warranty": "60 tháng", "types": ["7", "11", "12"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-convertible-2-wood-blue-tenkeyless-10310?category=2",
+  "categoryId" : "6", "name": "Filco Majestouch Convertible 2 Wood Blue (Tenkeyless)",
+  "price": "4.620.000",
+  "imgUrl": "/web/image/product.template/10310/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["8", "10", "11", "12"]
+}
+, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-2-camouflage-r-fullsize-7330?category=2",
+  "categoryId" : "6", "name": "Filco Majestouch 2 Camouflage R Fullsize",
+  "price": "3.850.000",
+  "imgUrl": "/web/image/product.template/7330/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["7", "10", "11", "14"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-2-camouflage-r-tenkeyless-7331?category=2",
+  "categoryId" : "6", "name": "Filco Majestouch 2 Camouflage R Tenkeyless",
+  "price": "3.630.000",
+  "imgUrl": "/web/image/product.template/7331/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["8", "10", "11", "14"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-2-hakua-fullsize-7079?category=2",
+  "categoryId" : "6", "name": "Filco Majestouch 2 Hakua Fullsize",
+  "price": "3.520.000",
+  "imgUrl": "/web/image/product.template/7079/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["7", "11", "14"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-2-hakua-tenkeyless-7080?category=2",
+  "categoryId" : "6", "name": "Filco Majestouch 2 Hakua (Tenkeyless)",
+  "price": "3.300.000",
+  "imgUrl": "/web/image/product.template/7080/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["8", "11", "14"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-convertible-2-fullsize-4934?category=2",
+  "categoryId" : "6", "name": "Filco Majestouch Convertible 2 Fullsize",
+  "price": "4.070.000",
+  "imgUrl": "/web/image/product.template/4934/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["7", "10", "11", "12", "13"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-convertible-2-tenkeyless-6449?category=2",
+  "categoryId" : "6", "name": "Filco Majestouch Convertible 2 Tenkeyless",
+  "price": "3.740.000",
+  "imgUrl": "/web/image/product.template/6449/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["8", "10", "11", "12", "13"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-minila-air-4936?category=2",
+  "categoryId" : "6", "name": "Filco Majestouch Minila Air",
+  "price": "3.520.000",
+  "imgUrl": "/web/image/product.template/4936/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["9", "10", "11", "12"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/fkbn104mps-eb2-filco-majestouch-2-s-fullsize-6077?category=2",
+  "categoryId" : "6", "name": "Filco Majestouch 2 S Fullsize",
+  "price": "3.520.000",
+  "imgUrl": "/web/image/product.template/6077/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["7", "14"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/fkbn87mps-eb2-filco-majestouch-2-s-tenkeyless-6078?category=2",
+  "categoryId" : "6", "name": "Filco Majestouch 2 S Tenkeyless",
+  "price": "3.300.000",
+  "imgUrl": "/web/image/product.template/6078/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["8", "14"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-2-pink-fullsize-5510?category=2",
+  "categoryId" : "6", "name": "Filco Majestouch 2 Pink Fullsize",
+  "price": "3.630.000",
+  "imgUrl": "/web/image/product.template/5510/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["7", "10", "11"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-2-pink-tenkeyless-5509?category=2",
+  "categoryId" : "6", "name": "Filco Majestouch 2 Pink Tenkeyless",
+  "price": "3.410.000",
+  "imgUrl": "/web/image/product.template/5509/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["8", "10", "11"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-2-fullsize-4929?category=2",
+  "categoryId" : "6", "name": "Filco Majestouch 2 Fullsize",
+  "price": "3.520.000",
+  "imgUrl": "/web/image/product.template/4929/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["7", "10", "11", "12", "13"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-2-tenkeyless-4932?category=2",
+  "categoryId" : "6", "name": "Filco Majestouch 2 Tenkeyless",
+  "price": "3.300.000",
+  "imgUrl": "/web/image/product.template/4932/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["8", "10", "11", "12", "13"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-2-ninja-fullsize-4930?category=2",
+  "categoryId" : "6", "name": "Filco Majestouch 2 Ninja Fullsize",
+  "price": "3.630.000",
+  "imgUrl": "/web/image/product.template/4930/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["7", "10", "11", "12", "13"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-2-ninja-tenkeyless-4931?category=2",
+  "categoryId" : "6", "name": "Filco Majestouch 2 Ninja Tenkeyless",
+  "price": "3.410.000",
+  "imgUrl": "/web/image/product.template/4931/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["8", "10", "11", "12", "13"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/realforce-rgb-7333?category=2",
+  "categoryId" : "7", "name": "Realforce RGB",
+  "price": "5.500.000",
+  "imgUrl": "/web/image/product.template/7333/image?unique=3863cb3",
+  "warranty": "12 tháng", "types": ["7", "16", "18"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-camou-r-tenkeypad-pro-8150?category=2",
+  "categoryId" : "6", "name": "Filco Majestouch Camou-R Tenkeypad Pro",
+  "price": "1.760.000",
+  "imgUrl": "/web/image/product.template/8150/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["9", "10", "11"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-hakua-tenkeypad-pro-8149?category=2&page=2",
+  "categoryId" : "6", "name": "Filco Majestouch Hakua Tenkeypad Pro",
+  "price": "1.650.000",
+  "imgUrl": "/web/image/product.template/8149/image?unique=1014db0",
+  "warranty": "60 tháng",
+  "types": ["9", "11", "14"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/fkb22mb-filco-majestouch-tenkeypad-usb-7503?category=2&page=2",
+  "categoryId" : "6", "name": "Filco Majestouch Tenkeypad USB",
+  "price": "1.320.000",
+  "imgUrl": "/web/image/product.template/7503/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["9", "11"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/realforce-87u-uw-55g-uniform-6850?category=2&page=2",
+  "categoryId" : "7", "name": "Realforce 87U-UW 55g Uniform",
+  "price": "4.620.000",
+  "imgUrl": "/web/image/product.template/6850/image?unique=3863cb3",
+  "warranty": "12 tháng", "types": ["8", "16"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/realforce-87u-ud-55g-uniform-5920?category=2&page=2",
+  "categoryId" : "7", "name": "Realforce 87U-UD 55g Uniform",
+  "price": "4.620.000",
+  "imgUrl": "/web/image/product.template/5920/image?unique=3863cb3",
+  "warranty": "12 tháng", "types": ["8", "16"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/realforce-104-hipro-45g-uniform-5922?category=2&page=2",
+  "categoryId" : "7", "name": "Realforce 104 Hipro 45g Uniform",
+  "price": "5.720.000",
+  "imgUrl": "/web/image/product.template/5922/image?unique=3863cb3",
+  "warranty": "12 tháng", "types": ["7", "16"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/razer-huntsman-elite-opto-mechanical-switch-11190?category=2&page=2",
+  "categoryId" : "8", "name": "Razer Huntsman Elite (Opto-Mechanical Switch)",
+  "price": "5.489.000",
+  "imgUrl": "/web/image/product.template/11190/image?unique=5e14ca8",
+  "warranty": "24 tháng", "types": ["7", "18"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/razer-huntsman-opto-mechanical-switch-11189?category=2&page=2",
+  "categoryId" : "8", "name": "Razer Huntsman (Opto-Mechanical Switch)",
+  "price": "3.889.000",
+  "imgUrl": "/web/image/product.template/11189/image?unique=1c2baeb",
+  "warranty": "24 tháng", "types": ["7", "18"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/amnesia-the-dark-descent-10943?category=2&page=2",
+  "categoryId" : "1", "name": "Amnesia: The Dark Descent",
+  "price": "179.000",
+  "imgUrl": "/web/image/product.template/10943/image?unique=399beab",
+  "warranty": ""
+}, {
+  "typeId": 0,
+  "url": "/shop/product/logitech-g512-romer-g-linear-10357?category=2&page=2",
+  "categoryId" : "12", "name": "Logitech G512 (Romer-G Linear)",
+  "price": "2.999.000",
+  "imgUrl": "/web/image/product.template/10357/image?unique=0bd8c77",
+  "warranty": "24 tháng", "types": ["7", "18"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/rz03-01703000-r3m1-razer-blackwidow-ultimate-green-switch-10355?category=2&page=2",
+  "categoryId" : "8", "name": "Razer BlackWidow Ultimate (Green Switch)",
+  "price": "2.689.000",
+  "imgUrl": "/web/image/product.template/10355/image?unique=8cf5635",
+  "warranty": "24 tháng", "types": ["7"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/logitech-g613-10354?category=2&page=2",
+  "categoryId" : "12", "name": "Logitech G613",
+  "price": "2.499.000",
+  "imgUrl": "/web/image/product.template/10354/image?unique=a30f261",
+  "warranty": "24 tháng", "types": ["7"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/logitech-g213-10353?category=2&page=2",
+  "categoryId" : "12", "name": "Logitech G213",
+  "price": "1.099.000",
+  "imgUrl": "/web/image/product.template/10353/image?unique=95c57db",
+  "warranty": "24 tháng", "types": ["7", "18"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/logitech-g512-romer-g-tactile-10352?category=2&page=2",
+  "categoryId" : "12", "name": "Logitech G512 (Romer-G Tactile)",
+  "price": "2.999.000",
+  "imgUrl": "/web/image/product.template/10352/image?unique=6139362",
+  "warranty": "24 tháng", "types": ["7", "18"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/kingston-alloy-fps-10351?category=2&page=2",
+  "categoryId" : "1",
+  "name": "Kingston Alloy FPS",
+  "price": "2.649.000",
+  "imgUrl": "/web/image/product.template/10351/image?unique=477ae65",
+  "warranty": "24 tháng",
+  "types": ["10", "11", "12"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/dare-u-dk1280-rgb-10350?category=2&page=2",
+  "categoryId" : "14", "name": "Dare-U DK1280 RGB",
+  "price": "1.080.000",
+  "imgUrl": "/web/image/product.template/10350/image?unique=90e4fb4",
+  "warranty": "24 tháng", "types": ["7", "18", "17"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/corsair-k68-rgb-ip32-10349?category=2&page=2",
+  "categoryId" : "10", "name": "Corsair K68 RGB - IP32",
+  "price": "3.589.000",
+  "imgUrl": "/web/image/product.template/10349/image?unique=57986b3",
+  "warranty": "24 tháng (1 đổi 1)",
+  "types": ["7", "18", "10", "12"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/dare-u-dk880-87key-rgb-9673?category=2&page=2",
+  "categoryId" : "14", "name": "Dare-U DK880 87KEY (RGB)",
+  "price": "790.000",
+  "imgUrl": "/web/image/product.template/9673/image?unique=38099b7",
+  "warranty": "24 tháng",
+  "types": ["8", "10", "11", "12", "17", "18"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-convertible-2-wood-blue-fullsize-10309?category=2&page=2",
+  "categoryId" : "6", "name": "Filco Majestouch Convertible 2 Wood Blue (Fullsize)",
+  "price": "4.950.000",
+  "imgUrl": "/web/image/product.template/10309/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["7", "10", "11", "12"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-convertible-2-shibuki-red-tenkeyless-9116?category=2&page=2",
+  "categoryId" : "6", "name": "Filco Majestouch Convertible 2 Shibuki Red (Tenkeyless)",
+  "price": "5.500.000",
+  "imgUrl": "/web/image/product.template/9116/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["8", "10", "11", "12", "13"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/kingston-hyperx-alloy-elite-gaming-10191?category=2&page=2",
+  "categoryId" : "1",
+  "name": "Kingston HyperX Alloy Elite Gaming",
+  "price": "2.929.000",
+  "imgUrl": "/web/image/product.template/10191/image?unique=df2eec4",
+  "warranty": "24 tháng",
+  "types": ["7", "10", "11", "12", "19"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-convertible-2-shibuki-black-tenkeyless-9115?category=2&page=3",
+  "categoryId" : "6", "name": "Filco Majestouch Convertible 2 Shibuki Black (Tenkeyless)",
+  "price": "5.500.000",
+  "imgUrl": "/web/image/product.template/9115/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["8", "10", "11", "12", "13"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-convertible-2-shibuki-red-fullsize-9114?category=2&page=3",
+  "categoryId" : "6", "name": "Filco Majestouch Convertible 2 Shibuki Red (Fullsize)",
+  "price": "5.830.000",
+  "imgUrl": "/web/image/product.template/9114/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["7", "10", "11", "12"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-convertible-2-shibuki-black-fullsize-9113?category=2&page=3",
+  "categoryId" : "6", "name": "Filco Majestouch Convertible 2 Shibuki Black (Fullsize)",
+  "price": "5.830.000",
+  "imgUrl": "/web/image/product.template/9113/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["7", "10", "11", "12"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/steelseries-apex-m750-prism-8705?category=2&page=3",
+  "categoryId" : "9", "name": "Steelseries Apex M750 Prism",
+  "price": "3.319.000",
+  "imgUrl": "/web/image/product.template/8705/image?unique=cd968b7",
+  "warranty": "12 tháng", "types": ["7", "18"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/steelseries-apex-m750-tkl-8704?category=2&page=3",
+  "categoryId" : "9", "name": "Steelseries Apex M750 TKL",
+  "price": "2.989.000",
+  "imgUrl": "/web/image/product.template/8704/image?unique=65a3f6f",
+  "warranty": "12 tháng", "types": ["8", "18"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/dare-u-ek810-108key-rgb-8616?category=2&page=3",
+  "categoryId" : "14", "name": "Dare-U EK810 108KEY (RGB)",
+  "price": "1.150.000",
+  "imgUrl": "/web/image/product.template/8616/image?unique=3863cb3",
+  "warranty": "24 tháng",
+  "types": ["7", "10", "11", "12", "17", "18"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/dare-u-ek810-87key-rgb-8615?category=2&page=3",
+  "categoryId" : "14", "name": "Dare-U EK810 87KEY (RGB)",
+  "price": "950.000",
+  "imgUrl": "/web/image/product.template/8615/image?unique=3863cb3",
+  "warranty": "24 tháng",
+  "types": ["8", "10", "11", "12", "18"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/dare-u-ck-525-8614?category=2&page=3",
+  "categoryId" : "14", "name": "Dare-U CK-525",
+  "price": "766.000",
+  "imgUrl": "/web/image/product.template/8614/image?unique=3863cb3",
+  "warranty": "24 tháng",
+  "types": ["7", "10", "11", "12", "17", "18"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/dare-u-dk87-white-8613?category=2&page=3",
+  "categoryId" : "14", "name": "Dare-U DK87 (White)",
+  "price": "590.000",
+  "imgUrl": "/web/image/product.template/8613/image?unique=3863cb3",
+  "warranty": "24 tháng",
+  "types": ["8", "10", "11", "12", "17", "20"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/dare-u-dk87-black-8612?category=2&page=3",
+  "categoryId" : "14", "name": "Dare-U DK87 (Black)",
+  "price": "590.000",
+  "imgUrl": "/web/image/product.template/8612/image?unique=3863cb3",
+  "warranty": "24 tháng",
+  "types": ["8", "10", "11", "12", "17", "19"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/corsair-k68-ip32-8512?category=2&page=3",
+  "categoryId" : "10", "name": "Corsair K68 - IP32",
+  "price": "2.789.000",
+  "imgUrl": "/web/image/product.template/8512/image?unique=1087a7e",
+  "warranty": "24 tháng (1 đổi 1)", "types": ["7", "10", "12"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/razer-blackwidow-chroma-v2-yellow-switch-8417?category=2&page=3",
+  "categoryId" : "8", "name": "Razer BlackWidow Chroma v2 (Yellow switch)",
+  "price": "3.989.000",
+  "imgUrl": "/web/image/product.template/8417/image?unique=0d52997",
+  "warranty": "24 tháng", "types": ["7", "18"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/razer-blackwidow-chroma-v2-orange-switch-8416?category=2&page=3",
+  "categoryId" : "8", "name": "Razer BlackWidow Chroma v2 (Orange switch)",
+  "price": "3.989.000",
+  "imgUrl": "/web/image/product.template/8416/image?unique=502fea9",
+  "warranty": "24 tháng", "types": ["7", "18"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/razer-blackwidow-chroma-v2-green-switch-8415?category=2&page=3",
+  "categoryId" : "8", "name": "Razer BlackWidow Chroma v2 (Green switch)",
+  "price": "3.989.000",
+  "imgUrl": "/web/image/product.template/8415/image?unique=b2cf20b",
+  "warranty": "24 tháng", "types": ["7", "18"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/razer-blackwidow-tournament-edition-chroma-v2-yellow-switch-8414?category=2&page=3",
+  "categoryId" : "8", "name": "Razer BlackWidow Tournament Edition Chroma v2 (Yellow switch)",
+  "price": "3.389.000",
+  "imgUrl": "/web/image/product.template/8414/image?unique=e3d28bc",
+  "warranty": "24 tháng", "types": ["8", "18"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/razer-blackwidow-tournament-edition-chroma-v2-orange-switch-8413?category=2&page=3",
+  "categoryId" : "8", "name": "Razer BlackWidow Tournament Edition Chroma v2 (Orange switch)",
+  "price": "3.389.000",
+  "imgUrl": "/web/image/product.template/8413/image?unique=4e65ab0",
+  "warranty": "24 tháng", "types": ["8", "18"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/razer-blackwidow-tournament-edition-chroma-v2-green-switch-8412?category=2&page=3",
+  "categoryId" : "8", "name": "Razer BlackWidow Tournament Edition Chroma v2 (Green switch)",
+  "price": "3.389.000",
+  "imgUrl": "/web/image/product.template/8412/image?unique=127f4dd",
+  "warranty": "24 tháng", "types": ["8", "18"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/logitech-g413-carbon-8311?category=2&page=3",
+  "categoryId" : "12", "name": "Logitech G413 Carbon",
+  "price": "2.189.000",
+  "imgUrl": "/web/image/product.template/8311/image?unique=0181041",
+  "warranty": "24 tháng", "types": ["8", "17"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/ban-phim-co-logitech-g-pro-8310?category=2&page=3",
+  "categoryId" : "12",
+  "name": "Bàn phím cơ Logitech G Pro",
+  "price": "1.969.000",
+  "imgUrl": "/web/image/product.template/8310/image?unique=4ba45a3",
+  "warranty": "24 tháng", "types": ["8", "17"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/ban-phim-co-alienware-aw768-pro-gaming-keyboard-8276?category=2&page=3",
+  "categoryId" : "13",
+  "name": "Bàn phím cơ Alienware AW768 Pro Gaming Keyboard",
+  "price": "3.289.000",
+  "imgUrl": "/web/image/product.template/8276/image?unique=8ec88db",
+  "warranty": "12 tháng", "types": ["7", "11", "18"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/ban-phim-co-alienware-aw568-advanced-gaming-keyboard-8275?category=2&page=4",
+  "categoryId" : "13",
+  "name": "Bàn phím cơ Alienware AW568 Advanced Gaming keyboard",
+  "price": "2.389.000",
+  "imgUrl": "/web/image/product.template/8275/image?unique=0440d2d",
+  "warranty": "12 tháng", "types": ["7", "11", "18"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-2-candy-lime-8176?category=2&page=4",
+  "categoryId" : "6", "name": "Filco Majestouch 2 Candy Lime",
+  "price": "4.510.000",
+  "imgUrl": "/web/image/product.template/8176/image?unique=1014db0",
+  "warranty": "60 tháng",
+  "types": ["7", "8", "11", "14"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-2-candy-cherry-8175?category=2&page=4",
+  "categoryId" : "6", "name": "Filco Majestouch 2 Candy Cherry",
+  "price": "4.510.000",
+  "imgUrl": "/web/image/product.template/8175/image?unique=1014db0",
+  "warranty": "60 tháng",
+  "types": ["7", "8", "11", "14"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-2-candy-grape-8174?category=2&page=4",
+  "categoryId" : "6", "name": "Filco Majestouch 2 Candy Grape",
+  "price": "4.510.000",
+  "imgUrl": "/web/image/product.template/8174/image?unique=1014db0",
+  "warranty": "60 tháng",
+  "types": ["7", "8", "11", "14"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/corsair-k95-platinum-rgb-gunmetal-mx-speed-7924?category=2&page=4",
+  "categoryId" : "10", "name": "Corsair K95 Platinum RGB Gunmetal MX Speed",
+  "price": "5.149.000",
+  "imgUrl": "/web/image/product.template/7924/image?unique=240f3d2",
+  "warranty": "24 tháng", "types": ["7", "15", "18"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/corsair-k95-platinum-rgb-7923?category=2&page=4",
+  "categoryId" : "10", "name": "Corsair K95 Platinum RGB",
+  "price": "4.989.000",
+  "imgUrl": "/web/image/product.template/7923/image?unique=5b2bc66",
+  "warranty": "24 tháng",
+  "types": ["7", "11", "15", "18"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-2-oliva-avorio-tenkeyless-7826?category=2&page=4",
+  "categoryId" : "6", "name": "Filco Majestouch 2 Oliva Avorio (Tenkeyless)",
+  "price": "3.850.000",
+  "imgUrl": "/web/image/product.template/7826/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["8", "10", "11", "12", "13"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-2-oliva-avorio-fullsize-7825?category=2&page=4",
+  "categoryId" : "6", "name": "Filco Majestouch 2 Oliva Avorio (Fullsize)",
+  "price": "4.070.000",
+  "imgUrl": "/web/image/product.template/7825/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["7", "10", "11", "12", "13"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/corsair-k63-red-switch-7675?category=2&page=4",
+  "categoryId" : "10", "name": "Corsair K63 - Red switch",
+  "price": "2.009.000",
+  "imgUrl": "/web/image/product.template/7675/image?unique=5223fb6",
+  "warranty": "24 tháng (1 đổi 1)", "types": ["8", "12", "19"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/corsair-k70-lux-rgb-6670?category=2&page=4",
+  "categoryId" : "10", "name": "Corsair K70 LUX RGB",
+  "price": "4.049.000",
+  "imgUrl": "/web/image/product.template/6670/image?unique=9c0ca42",
+  "warranty": "24 tháng",
+  "types": ["7", "11", "12", "18"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/corsair-k70-lux-6669?category=2&page=4",
+  "categoryId" : "10", "name": "Corsair K70 LUX",
+  "price": "2.989.000",
+  "imgUrl": "/web/image/product.template/6669/image?unique=44fe3fb",
+  "warranty": "24 tháng",
+  "types": ["7", "10", "11", "12", "19"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/corsair-k65-lux-rgb-6668?category=2&page=4",
+  "categoryId" : "10", "name": "Corsair K65 LUX RGB",
+  "price": "3.079.000",
+  "imgUrl": "/web/image/product.template/6668/image?unique=0690139",
+  "warranty": "24 tháng", "types": ["8", "12", "18"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-2-vintage-teak-tenkeyless-6387?category=2&page=4",
+  "categoryId" : "6", "name": "Filco Majestouch 2 Vintage Teak Tenkeyless",
+  "price": "3.850.000",
+  "imgUrl": "/web/image/product.template/6387/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["8", "10", "11", "12", "13"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-2-vintage-teak-fullsize-6386?category=2&page=4",
+  "categoryId" : "6", "name": "Filco Majestouch 2 Vintage Teak Fullsize",
+  "price": "4.070.000",
+  "imgUrl": "/web/image/product.template/6386/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["7", "10", "11", "12"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/realforce-87u-uw-variable-5971?category=2&page=4",
+  "categoryId" : "7", "name": "Realforce 87U-UW variable",
+  "price": "5.720.000",
+  "imgUrl": "/web/image/product.template/5971/image?unique=3863cb3",
+  "warranty": "12 tháng", "types": ["8", "16"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-2-italian-red-5948?category=2&page=4",
+  "categoryId" : "6", "name": "Filco Majestouch 2 Italian red",
+  "price": "3.740.000",
+  "imgUrl": "/web/image/product.template/5948/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["7", "10", "11", "12", "13"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-2-white-carbon-fullsize-5947?category=2&page=4",
+  "categoryId" : "6", "name": "Filco Majestouch 2 White carbon Fullsize",
+  "price": "4.500.000",
+  "imgUrl": "/web/image/product.template/5947/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["7", "10", "11", "12", "13"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-2-white-carbon-tenkeyless-5946?category=2&page=4",
+  "categoryId" : "6", "name": "Filco Majestouch 2 White carbon Tenkeyless",
+  "price": "4.280.000",
+  "imgUrl": "/web/image/product.template/5946/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["8", "10", "11", "12", "13"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-2-lacquer-black-splash-5945?category=2&page=4",
+  "categoryId" : "6", "name": "Filco Majestouch 2 Lacquer Black splash",
+  "price": "5.500.000",
+  "imgUrl": "/web/image/product.template/5945/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["7", "10", "11", "12", "13"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-2-lacquer-red-splash-5944?category=2&page=4",
+  "categoryId" : "6", "name": "Filco Majestouch 2 Lacquer Red splash",
+  "price": "5.500.000",
+  "imgUrl": "/web/image/product.template/5944/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["7", "10", "11", "12", "13"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-2-lacquer-copper-gold-5943?category=2&page=5",
+  "categoryId" : "6", "name": "Filco Majestouch 2 Lacquer Copper & Gold",
+  "price": "5.500.000",
+  "imgUrl": "/web/image/product.template/5943/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["7", "10", "11", "12", "13"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-2-lacquer-red-gold-5942?category=2&page=5",
+  "categoryId" : "6", "name": "Filco Majestouch 2 Lacquer Red & Gold",
+  "price": "5.500.000",
+  "imgUrl": "/web/image/product.template/5942/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["7", "10", "11", "12", "13"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-2-camouflage-fullsize-5941?category=2&page=5",
+  "categoryId" : "6", "name": "Filco Majestouch 2 Camouflage Fullsize",
+  "price": "3.630.000",
+  "imgUrl": "/web/image/product.template/5941/image?unique=1014db0",
+  "warranty": "60 tháng",
+  "types": ["7", "10", "11"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-2-camouflage-tenkeyless-5940?category=2&page=5",
+  "categoryId" : "6", "name": "Filco Majestouch 2 Camouflage Tenkeyless",
+  "price": "3.410.000",
+  "imgUrl": "/web/image/product.template/5940/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["8", "10", "11"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-2-ai-5939?category=2&page=5",
+  "categoryId" : "6", "name": "Filco Majestouch 2 AI",
+  "price": "3.520.000",
+  "imgUrl": "/web/image/product.template/5939/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["7", "10", "11"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-2-yellow-fullsize-5927?category=2&page=5",
+  "categoryId" : "6", "name": "Filco Majestouch 2 Yellow Fullsize",
+  "price": "3.630.000",
+  "imgUrl": "/web/image/product.template/5927/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["7", "10", "11"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-2-yellow-tenkeyless-5925?category=2&page=5",
+  "categoryId" : "6", "name": "Filco Majestouch 2 Yellow Tenkeyless",
+  "price": "3.410.000",
+  "imgUrl": "/web/image/product.template/5925/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["8", "11"]
+}, {	
+  "typeId": 0,
+  "url": "/shop/product/logitech-g610-5276?category=2&page=5",
+  "categoryId" : "12", "name": "Logitech G610",
+  "price": "1.969.000",
+  "imgUrl": "/web/image/product.template/5276/image?unique=6d9efa3",
+  "warranty": "24 tháng", "types": ["7", "10", "11"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/corsair-strafe-rgb-mx-silent-5206?category=2&page=5",
+  "categoryId" : "10", "name": "Corsair Strafe RGB - MX Silent",
+  "price": "3.859.000",
+  "imgUrl": "/web/image/product.template/5206/image?unique=bdf36b4",
+  "warranty": "24 tháng", "types": ["7", "14", "18"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-convertible-2-kinrin-fullsize-5221?category=2&page=5",
+  "categoryId" : "6", "name": "Filco Majestouch Convertible 2 Kinrin Fullsize",
+  "price": "4.950.000",
+  "imgUrl": "/web/image/product.template/5221/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["7", "10", "11", "12"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/corsair-strafe-rgb-5205?category=2&page=5",
+  "categoryId" : "10", "name": "Corsair Strafe RGB",
+  "price": "3.690.000",
+  "imgUrl": "/web/image/product.template/5205/image?unique=73f6031",
+  "warranty": "24 tháng",
+  "types": ["7", "11", "12", "18"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-convertible-2-italian-red-4935?category=2&page=5",
+  "categoryId" : "6", "name": "Filco Majestouch Convertible 2 Italian red",
+  "price": "4.400.000",
+  "imgUrl": "/web/image/product.template/4935/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["7", "10", "11", "12", "13"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/realforce-87u-ud-variable-5097?category=2&page=5",
+  "categoryId" : "7", "name": "Realforce 87U-UD variable",
+  "price": "5.720.000",
+  "imgUrl": "/web/image/product.template/5097/image?unique=3863cb3",
+  "warranty": "12 tháng", "types": ["8", "16"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/filco-majestouch-2-ecw-5035?category=2&page=5",
+  "categoryId" : "6", "name": "Filco Majestouch 2 ECW",
+  "price": "3.410.000",
+  "imgUrl": "/web/image/product.template/5035/image?unique=1014db0",
+  "warranty": "60 tháng", "types": ["8", "10", "11"]
+}, {
+  "typeId": 0,
+  "url": "/shop/product/corsair-strafe-blue-switch-4927?category=2&page=5",
+  "categoryId" : "10", "name": "Corsair Strafe (Blue switch)",
+  "price": "2.479.000",
+  "imgUrl": "/web/image/product.template/4927/image?unique=810892c",
+  "warranty": "24 tháng",
+  "types": ["7", "10", "19"]
+}
+]
