@@ -5,6 +5,9 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
   }
   root 'welcome#home'
+  concern :paginatable do
+    get '(page/:page)', action: :index, on: :collection, as: ''
+  end
   
 
 end

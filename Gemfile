@@ -5,6 +5,9 @@ ruby '2.5.1'
 
 gem 'nokogiri'
 
+gem 'kaminari'
+gem 'bootstrap4-kaminari-views'
+
 gem 'devise'
 #rails
 

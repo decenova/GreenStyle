@@ -23,9 +23,9 @@
     <div>
       <div style="width:20%; float: left">
         <% Category.all.each do |cate| %>
-          <%= link_to "#{cate.name}", "#" %> <br/>
+          <%= link_to "#{cate.name}", products_path %> <br/>
           <% cate.categories.each do |sub_cate| %>
-            - <%= link_to "#{sub_cate.name}", "#" %> <br/>
+            - <%= link_to "#{sub_cate.name}", products_path %> <br/>
         <% end %>
       <% end %>
       </div>
