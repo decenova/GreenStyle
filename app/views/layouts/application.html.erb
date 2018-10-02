@@ -22,7 +22,7 @@
     <p>Trải nghiệm xanh, cuộc sống xanh</p>
     <div>
       <div style="width:20%; float: left">
-        <% Category.all.each do |cate| %>
+        <% Category.where(category_id: nil).all.each do |cate| %>
           <%= link_to "#{cate.name}", products_path %> <br/>
           <% cate.categories.each do |sub_cate| %>
             - <%= link_to "#{sub_cate.name}", products_path %> <br/>

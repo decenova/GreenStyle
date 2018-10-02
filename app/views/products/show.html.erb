@@ -1,29 +1,23 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
+<%= image_tag 'https://www.phongcachxanh.vn' + @product.image_url, size: "200x200" %>
+<br/>
+<%= @product.name %>
+<br/>
+<%= number_to_currency(@product.price * 1000000) %>
+<br/>
 
-<p>
-  <strong>Image url:</strong>
-  <%= image_tag 'https://www.phongcachxanh.vn' + @product.image_url, size: "50X50" %>
-</p>
+<% @pro_types.each do |ty|%>
+  <% if @tmp != ty.type_id%>
+    <b><%= Type.find_by_id(ty.type_id).name %>:</b> <br/>
+  <% end %>
+  <% @tmp = ty.type_id %>
+  - <%= ty.name %> <br/>
+<% end %>
+Bảo hành:
+<%= @product.warranty %> <br/>
 
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
 
-<p>
-  <strong>Quantity:</strong>
-  <%= @product.quantity %>
-</p>
-
-<p>
-  <strong>Warranty:</strong>
-  <%= @product.warranty %>
-</p>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
