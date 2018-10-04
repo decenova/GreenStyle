@@ -4,7 +4,7 @@
       <tr>
         <td><%= image_tag 'https://www.phongcachxanh.vn' + product.image_url, size: "50x50" %></td>
         <td><%= product.name %></td>
-        <td><%= product.price %></td>
+        <td><%= number_to_currency(product.price) %></td>
         <td><%= link_to 'Show', product %></td>
       </tr>
     <% end %>

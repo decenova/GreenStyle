@@ -20,6 +20,7 @@
     </div>
     <h1>Green Style</h1>
     <p>Trải nghiệm xanh, cuộc sống xanh</p>
+    
     <div>
       <div style="width:20%; float: left">
         <% Category.where(category_id: nil).all.each do |cate| %>
@@ -30,6 +31,7 @@
       <% end %>
       </div>
       <div style="width:80%">
+        <%= link_to "Thêm sản phẩm", new_product_path %>
         <%= yield %>
       <div>
     </div>

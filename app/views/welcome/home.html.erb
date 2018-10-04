@@ -1,10 +1,11 @@
+
 <table>
   <tbody>
     <% @products.each do |product| %>
       <tr>
         <td><%= link_to (image_tag 'https://www.phongcachxanh.vn' + product.image_url, size: "50x50"), product_path(product.id) %></td>
         <td><%= link_to "#{product.name}", product_path(product.id) %></td>
-        <td><%= number_to_currency(product.price * 1000000) %></td>
+        <td><%= number_to_currency(product.price) %></td>
       </tr>
     <% end %>
   </tbody>

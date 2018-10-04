@@ -1,42 +1,52 @@
 <%= form_with(model: product, local: true) do |form| %>
-  <% if product.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(product.errors.count, "error") %> prohibited this product from being saved:</h2>
-
-      <ul>
-      <% product.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
   <div class="field">
-    <%= form.label :name %>
+    Tên sản phẩm:
     <%= form.text_field :name %>
   </div>
-
   <div class="field">
-    <%= form.label :image_url %>
-    <%= image_tag 'https://www.phongcachxanh.vn' + product.image_url, size: "100x100" %>
+    Dòng sản phẩm:
+    <%= select_tag "category_id", options_from_collection_for_select(Category.parent_cate, :id, :name),
+     :onChange => "getBrandAndTypeByCategoryId(this.options[this.selectedIndex].value)" %>
+  </div>
+  <div class="field">
+    Hãng sản phẩm:
+    <div id="brand_select">
+     <%= form.select "brand_id", '<option></option>', 
+          {prompt: '-----Chọn hãng-----'} %>
+    </div> <!-- div select -->
+  </div>
+  <div class="field">
+    Các loại:
+    <div id="type_check">
+    </div>
+  </div>
+  <div class="field">
+    Hình sản phẩm:
+    <% if action_name == 'new'%>
+      <%= form.file_field :image_url %>
+    <% elsif %>
+      <% if product.image_url %>
+        <%= image_tag 'https://www.phongcachxanh.vn' + product.image_url, size: "100x100" %>
+      <% end %> <!-- end elsif -->
+    <% end %> <!-- end if new -->
   </div>
 
   <div class="field">
-    <%= form.label :price %>
+    Giá cả (VNĐ):
     <%= form.text_field :price %>
   </div>
 
   <div class="field">
-    <%= form.label :quantity %>
+    Số lượng:
     <%= form.number_field :quantity %>
   </div>
 
   <div class="field">
-    <%= form.label :warranty %>
+    Bảo hành:
     <%= form.text_field :warranty %>
   </div>
 
   <div class="actions">
     <%= form.submit %>
   </div>
-<% end %>
+<% end %> <!-- end form -->
