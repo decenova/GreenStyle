@@ -26,8 +26,8 @@
       <%= form.file_field :image_url %>
     <% elsif %>
       <% if product.image_url %>
-        <%= image_tag 'https://www.phongcachxanh.vn' + product.image_url, size: "100x100" %>
-      <% end %> <!-- end elsif -->
+        <%= image_tag product.image_url, size: "100x100" %>
+      <% end %> <!-- end elsif new -->
     <% end %> <!-- end if new -->
   </div>
 

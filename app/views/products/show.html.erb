@@ -1,15 +1,18 @@
 <p id="notice"><%= notice %></p>
-<% if @product.image_url %>
-  <%= image_tag 'https://www.phongcachxanh.vn' + @product.image_url, size: "200x200" %>
-<% end %> <!-- end if image -->
+
+<% if @product.image_url_identifier.include? Product::IMAGE_ONLINE_LINK %>
+  <%= image_tag(@product.image_url_identifier, size: "200x200") %>
+<% else %>
+  <td><%= image_tag(@product.image_url.url, size: "200x200") %></td>
+<% end %>
 <br/>
 <%= @product.name %>
 <br/>
 <%= number_to_currency(@product.price) %>
 <br/>
 
-<% @pro_types.each do |ty|%>
-  <% if @tmp != ty.type_id%>
+<% @pro_types.each do |ty| %>
+  <% if @tmp != ty.type_id %>
     <b><%= Type.find_by_id(ty.type_id).name %>:</b> <br/>
   <% end %>
   <% @tmp = ty.type_id %>

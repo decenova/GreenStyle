@@ -11,7 +11,7 @@ function getBrand(cateId) {
         success: function(data) {
             var brands_data = data.brands
             div_brand_select.empty();
-            div_brand_select.append("<select id='brand_select_id'>");
+            div_brand_select.append("<select id='brand_select_id' name='product[category_id]'>");
             for(i = 0; i < brands_data.length; i++) {
                 $('#brand_select_id')
                 .append("<option value='" + brands_data[i].id + "'>"

@@ -7,6 +7,10 @@ gem 'rails-i18n'
 
 gem 'nokogiri'
 
+#upload image
+gem 'carrierwave'
+gem 'mini_magick'
+
 gem 'kaminari'
 gem 'bootstrap4-kaminari-views'
 

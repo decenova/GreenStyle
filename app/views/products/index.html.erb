@@ -2,7 +2,11 @@
   <tbody>
     <% @products.each do |product| %>
       <tr>
-        <td><%= image_tag 'https://www.phongcachxanh.vn' + product.image_url, size: "50x50" %></td>
+        <% if product.image_url_identifier.include? Product::IMAGE_ONLINE_LINK %>
+          <td><%= image_tag(product.image_url_identifier, size: "50x50") %></td>
+        <% else %>
+          <td><%= image_tag(product.image_url.url, size: "50x50") %></td>
+        <% end %>
         <td><%= product.name %></td>
         <td><%= number_to_currency(product.price) %></td>
         <td><%= link_to 'Show', product %></td>
