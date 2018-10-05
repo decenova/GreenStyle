@@ -4,7 +4,7 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all.page params[:page]
+    @products = Product.all.newest.page params[:page]
   end
 
   # GET /products/1
@@ -20,6 +20,7 @@ class ProductsController < ApplicationController
 
   # GET /products/1/edit
   def edit
+    @category = Category.find(@product.category_id)
   end
 
   # POST /products
@@ -29,6 +30,9 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       if @product.save
+        params[:type_ids].each do |id|
+          @product.types << Type.find(id)
+        end
         format.html { redirect_to @product, notice: 'Product was successfully created.' }
         format.json { render :show, status: :created, location: @product }
       else

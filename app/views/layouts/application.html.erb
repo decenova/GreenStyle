@@ -27,13 +27,13 @@
           <%= link_to "#{cate.name}", products_path %> <br/>
           <% cate.categories.each do |sub_cate| %>
             - <%= link_to "#{sub_cate.name}", products_path %> <br/>
-        <% end %>
-      <% end %>
-      </div>
+          <% end %> <!-- end sub_cate -->
+        <% end %> <!-- end cate -->
+      </div> <!-- div for menu -->
+      <%= link_to "Thêm sản phẩm", new_product_path %>
       <div style="width:80%">
-        <%= link_to "Thêm sản phẩm", new_product_path %>
         <%= yield %>
-      <div>
+      <div> <!-- div for frame -->
     </div>
   </body>
 </html>

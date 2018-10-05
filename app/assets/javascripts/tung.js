@@ -48,7 +48,7 @@ function getSubTypeByParentType(typeId) {
             $('#parent_type_' + typeId).append("<br/>");
             for(i = 0; i < subtypes.length; i++) {
                 $('#parent_type_' + typeId).append("<input type='checkbox' name='" 
-                + subtypes[i].id + "' value='" + subtypes[i].name + "'>"
+                +"type_ids[]' value='" + subtypes[i].id + "'>"
                 + subtypes[i].name + "</input><br/>");
             }
         }

@@ -4,29 +4,41 @@
     <%= form.text_field :name %>
   </div>
   <div class="field">
-    Dòng sản phẩm:
-    <%= select_tag "category_id", options_from_collection_for_select(Category.parent_cate, :id, :name),
-     :onChange => "getBrandAndTypeByCategoryId(this.options[this.selectedIndex].value)" %>
+    Dòng sản phẩm: <br/>
+    <% if @category %>
+      <%= select_tag "category_id", options_from_collection_for_select(Category.parent_cate, :id, :name, "#{@category.category_id}") %>
+    <% else %>
+      <%= select_tag "category_id", options_from_collection_for_select(Category.parent_cate, :id, :name),
+        :onChange => "getBrandAndTypeByCategoryId(this.options[this.selectedIndex].value)" %>
+    <% end %>
   </div>
   <div class="field">
     Hãng sản phẩm:
-    <div id="brand_select">
-     <%= form.select "brand_id", '<option></option>', 
-          {prompt: '-----Chọn hãng-----'} %>
-    </div> <!-- div select -->
+    <% if action_name == 'new'%>
+      <div id="brand_select">
+        <%= form.select "brand_id", '<option></option>', 
+              {prompt: '-----Chọn hãng-----'} %>
+      </div> <!-- div select -->
+    <% else %>
+      <%= select_tag "category_id", options_from_collection_for_select(Category.sub_cate(@category.category_id), :id, :name, "#{@category.id}") %>
+    <% end %>
   </div>
   <div class="field">
-    Các loại:
+    Các loại: <br/>
     <div id="type_check">
     </div>
   </div>
   <div class="field">
-    Hình sản phẩm:
+    Hình sản phẩm: <br/>
     <% if action_name == 'new'%>
       <%= form.file_field :image_url %>
-    <% elsif %>
-      <% if product.image_url %>
-        <%= image_tag product.image_url, size: "100x100" %>
+    <% elsif action_name == 'edit'%>
+      <% if product.image_url.url %>
+        <% if product.image_url_identifier.include? Product::IMAGE_ONLINE_LINK %>
+          <%= image_tag product.image_url_identifier, size: "100x100" %>
+        <% else %>
+          <%= image_tag product.image_url.url, size: "100x100" %>
+        <% end %>
       <% end %> <!-- end elsif new -->
     <% end %> <!-- end if new -->
   </div>

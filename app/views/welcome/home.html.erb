@@ -8,8 +8,8 @@
             <td><%= image_tag product.image_url_identifier, size: "50x50" %></td>
           <% else %>
             <td><%= image_tag product.image_url.url, size: "50x50" %></td>
-          <% end %>
-        <% end %>
+          <% end %> <!-- end identifier  -->
+        <% end %> <!-- end image url -->
         <td><%= link_to "#{product.name}", product_path(product.id) %></td>
         <td><%= number_to_currency(product.price) %></td>
       </tr>

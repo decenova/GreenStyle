@@ -1,9 +1,10 @@
-<p id="notice"><%= notice %></p>
 
-<% if @product.image_url_identifier.include? Product::IMAGE_ONLINE_LINK %>
-  <%= image_tag(@product.image_url_identifier, size: "200x200") %>
-<% else %>
-  <td><%= image_tag(@product.image_url.url, size: "200x200") %></td>
+<% if @product.image_url.url %>
+  <% if @product.image_url_identifier.include? Product::IMAGE_ONLINE_LINK %>
+    <%= image_tag @product.image_url_identifier, size: "200x200" %>
+  <% else %>
+    <%= image_tag @product.image_url.url, size: "200x200" %>
+  <% end %>
 <% end %>
 <br/>
 <%= @product.name %>
@@ -11,16 +12,20 @@
 <%= number_to_currency(@product.price) %>
 <br/>
 
-<% @pro_types.each do |ty| %>
-  <% if @tmp != ty.type_id %>
-    <b><%= Type.find_by_id(ty.type_id).name %>:</b> <br/>
+<% @pro_types.each do |t| %> <!-- pro có những type nào -->
+  <% @tmp_radio = false %> <!-- mặc đinh là kiểu text (radio false) -->
+  <% if @tmp != t.type_id %> <!-- nếu id ko trùng thì in ra tên super type -->
+    <!-- nếu trùng thì ko in tên super type -->
+    <b><%= Type.find_by_id(t.type_id).name %>:</b> <br/>
+    <% @tmp_radio = true %> <!-- nếu id trùng, chắc chắc có 2 sub_type trở lên -->
+    <!-- nên phải in ra kiểu radio, để trong lúc order -->
   <% end %>
-  <% @tmp = ty.type_id %>
-  - <%= ty.name %> <br/>
+  <% @tmp = t.type_id %> <!-- gán type_id cho 1 biến tạm để so sánh -->
+  <%= t.name %> <br/>
 <% end %>
 Bảo hành:
 <%= @product.warranty %> <br/>
 
 <%= button_to("Mua ngay") %>
 
-<%= link_to 'Back', products_path %>
+<%= link_to 'Back', products_path %> | <%= link_to 'Sửa thông tin', edit_product_path %>
