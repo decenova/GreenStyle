@@ -1,0 +1,18 @@
+<h2>Thông tin khách hàng</h2>
+<div>
+	<div class="field">
+		Email: <%= @user.email %>
+  </div>
+  <div class="field">
+    Tên khách hàng: <%= @user.name %>
+  </div>
+  <div class="field">
+    Địa chỉ: <%= @user.address %>
+  </div>
+  <div class="field">
+    Điện thoại: <%= @user.phone %>
+  </div>
+	<%= link_to 'Thay đổi thông tin', edit_user_registration_path %> |
+  <%= link_to 'Thay đổi mật khẩu', edit_user_path(@user.id) %> |
+	<%= link_to 'Trở về', :back %>
+</div>

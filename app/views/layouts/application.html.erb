@@ -15,7 +15,7 @@
         <%= link_to 'Đăng nhập', new_user_session_path %>
       <% else %>
         <%= link_to 'Đăng xuất', destroy_user_session_path, method: 'delete' %>
-        <%= current_user.name %>
+        <%= link_to "#{current_user.name}", user_path(current_user.id) %>
       <% end %>
     </div>
     <h1>Green Style</h1>
