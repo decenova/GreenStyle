@@ -14,13 +14,43 @@
 
   <body onLoad='notifyAll("<%= notice %>")'>
     
-    <% if !current_user %>
-      <%= link_to 'Đăng nhập', new_user_session_path %>
-    <% else %>
-      <%= link_to 'Đăng xuất', destroy_user_session_path, method: 'delete' %>
-      <%= current_user.name %>
-    <% end %>
-    
+    <div class="menu__bar block--fixed block--height-large block--width-full">
+      <div class="menu__container">
+        <div class="logo_container block--height-full">
+            <p class="font--size-xlarge line--height-large"><span class="logo logo--color-green">Green</span> style</p>
+        </div>
+        <div class="menu block--height-full">
+          <div class="menu__item">
+            <p>Trang chủ</p>
+          </div>
+          <div class="menu__item">
+            <p>Bàn phím cơ</p>
+          </div>
+          <div class="menu__item">
+            <p>Chuột</p>
+          </div>
+          <div class="menu__item">
+            <p>Key cap</p>
+          </div>
+          <div class="menu__item">
+            <p>Tai nghe</p>
+          </div>
+          <div class="menu__item">
+            <p>Loa</p>
+          </div>
+        </div>
+        <div class="menu__user__container block--relative">
+          <div class="menu__user__login line--height-large">
+            <% if !current_user %>
+              <%= link_to 'Đăng nhập', new_user_session_path %>
+            <% else %>
+              <%= link_to 'Đăng xuất', destroy_user_session_path, method: 'delete' %>
+              <%= current_user.name %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>
