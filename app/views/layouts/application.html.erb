@@ -13,41 +13,31 @@
   </head>
 
   <body onLoad='notifyAll("<%= notice %>")'>
-    <div style="width:100%">
-      <% if !current_user %>
-        <%= link_to 'Đăng nhập', new_user_session_path %>
-      <% else %>
-        <%= link_to 'Đăng xuất', destroy_user_session_path, method: 'delete' %>
-        <%= current_user.name %>
-      <% end %>
-    </div>
-    <h1>Green Style</h1>
-    <p>Trải nghiệm xanh, cuộc sống xanh</p>
-    
     <div class="menu__bar block--fixed block--height-large block--width-full">
       <div class="menu__container">
         <div class="logo_container block--height-full">
             <p class="font--size-xlarge line--height-large"><span class="logo logo--color-green">Green</span> style</p>
         </div>
         <div class="menu block--height-full">
-          <div class="menu__item">
-            <p>Trang chủ</p>
-          </div>
-          <div class="menu__item">
-            <p>Bàn phím cơ</p>
-          </div>
-          <div class="menu__item">
-            <p>Chuột</p>
-          </div>
-          <div class="menu__item">
-            <p>Key cap</p>
-          </div>
-          <div class="menu__item">
-            <p>Tai nghe</p>
-          </div>
-          <div class="menu__item">
-            <p>Loa</p>
-          </div>
+            <div class="menu__item menu__item--color-black menu__item--color-white--hover">
+              <div class="menu__item__title">
+                <%= link_to "Trang chủ", root_path %>
+              </div>
+            </div>
+          <% Category.where(category_id: nil).all.each do |cate| %>
+            <div class="menu__item menu__item--color-black menu__item--color-white--hover">
+              <div class="menu__item__title">
+                <%= link_to "#{cate.name}", products_path %>
+              </div>
+              <div class="menu__item__drop">
+                <% cate.categories.each do |sub_cate| %>
+                  <div class="menu__item__drop__item">
+                    <%= link_to "#{sub_cate.name}", products_path %>
+                  </div>
+                <% end %> <!-- end sub_cate -->
+              </div>
+            </div>
+          <% end %> <!-- end cate -->
         </div>
         <div class="menu__user__container block--relative">
           <div class="menu__user__login line--height-large">
@@ -61,21 +51,9 @@
         </div>
       </div>
     </div>
-    <%# <%= yield %>
-    <%# %>
+    <%= yield %>
     <div>
-      <div style="width:20%; float: left">
-        <% Category.where(category_id: nil).all.each do |cate| %>
-          <%= link_to "#{cate.name}", products_path %> <br/>
-          <% cate.categories.each do |sub_cate| %>
-            - <%= link_to "#{sub_cate.name}", products_path %> <br/>
-          <% end %> <!-- end sub_cate -->
-        <% end %> <!-- end cate -->
-      </div> <!-- div for menu -->
       <%= link_to "Thêm sản phẩm", new_product_path %>
-      <div style="width:80%">
-        <%= yield %>
-      <div> <!-- div for frame -->
     </div>
   </body>
 </html>

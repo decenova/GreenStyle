@@ -1,19 +1,45 @@
+<div class="background--color-greengray">
+  <div class="block--height-large"></div>
+  <div class="block--height-large"></div>
+  <div class="banner__container block--margin-auto">
+    <% @products.each_with_index do |product, index| %>
+      <a href="<%= product_path(product.id)%>">
+      <% if (index % 7 == 0) %>
+        <div class="banner__item banner__item--big block--float-left">
+      <% elsif (index % 7 == 1) %>
+        <div class="banner__item banner__item--medium block--float-left">
+      <% elsif (index % 7 == 4) %>
+        <div class="banner__item banner__item--medium block--float-right">
+      <% elsif (index % 7 == 5 || index % 7 == 6) %>
+        <div class="banner__item banner__item--small block--float-right">
+      <% else %>
+        <div class="banner__item banner__item--small block--float-left">  
+      <% end %>
 
-<table>
-  <tbody>
-    <% @products.each do |product| %>
-      <tr>
         <% if product.image_url.url %>
           <% if product.image_url_identifier.include? Product::IMAGE_ONLINE_LINK %>
-            <td><%= image_tag product.image_url_identifier, size: "50x50" %></td>
+            <%# <%= image_tag product.image_url_identifier, size: "50x50" %>
+            <div class="background" style="background-image: url(<%= product.image_url_identifier %>);"></div>
           <% else %>
-            <td><%= image_tag product.image_url.url, size: "50x50" %></td>
+            <%# <%= image_tag product.image_url.url, size: "50x50"  %>
+            <div class="background" style="background-image: asset-url(<%= image_url(product.image_url.url) %>);"></div>
           <% end %> <!-- end identifier  -->
         <% end %> <!-- end image url -->
-        <td><%= link_to "#{product.name}", product_path(product.id) %></td>
-        <td><%= number_to_currency(product.price) %></td>
-      </tr>
+
+        <div class="banner__info">
+          <p class="banner__info__name text--ellipsis">
+            <%= link_to "#{product.name}", product_path(product.id) %>
+          </p>
+          <p class="banner__info__price text--ellipsis">
+            <%= number_to_currency(product.price) %>
+          </p>
+        </div>
+      </div>
+      </a>  
     <% end %>
-  </tbody>
-</table>
-<%= paginate @products %> 
+    <div style="clear: both;"></div>
+  </div>
+
+  <%= paginate @products %> 
+
+</div>

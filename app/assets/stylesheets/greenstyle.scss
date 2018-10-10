@@ -1,3 +1,6 @@
+body {
+  min-width: 1024px;
+}
 .logo--color-green{
   color: #69d169;
 }
@@ -9,7 +12,7 @@
   height: 100%;
   width: 100%;
   background-attachment: fixed;
-  background-image: url(image-path('image.jpg'));
+  background-image: url('image.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -37,3 +40,30 @@
 .login__link{
   text-align: right;
 }
+
+.index__info_banner{
+  background-color: #69d169;
+  color: #fff;
+}
+.index__info{
+  max-width: 768px;
+  padding: 50px 0px;
+}
+
+.banner__info p{
+  margin: 5px 2px;
+}
+
+.background--color-greengray{
+  background-color: #8efc8f;
+  background-image: linear-gradient(62deg, #8efc8f 0%, #dfff88 100%);
+   
+}
+
+.banner__item a{
+  color: #000;
+}
+.banner__item:hover *{
+  color: #fff;
+}
+
