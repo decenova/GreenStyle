@@ -13,44 +13,30 @@
   </head>
 
   <body onLoad='notifyAll("<%= notice %>")'>
-    
-    <div class="menu__bar block--fixed block--height-large block--width-full">
-      <div class="menu__container">
-        <div class="logo_container block--height-full">
-            <p class="font--size-xlarge line--height-large"><span class="logo logo--color-green">Green</span> style</p>
-        </div>
-        <div class="menu block--height-full">
-          <div class="menu__item">
-            <p>Trang chủ</p>
-          </div>
-          <div class="menu__item">
-            <p>Bàn phím cơ</p>
-          </div>
-          <div class="menu__item">
-            <p>Chuột</p>
-          </div>
-          <div class="menu__item">
-            <p>Key cap</p>
-          </div>
-          <div class="menu__item">
-            <p>Tai nghe</p>
-          </div>
-          <div class="menu__item">
-            <p>Loa</p>
-          </div>
-        </div>
-        <div class="menu__user__container block--relative">
-          <div class="menu__user__login line--height-large">
-            <% if !current_user %>
-              <%= link_to 'Đăng nhập', new_user_session_path %>
-            <% else %>
-              <%= link_to 'Đăng xuất', destroy_user_session_path, method: 'delete' %>
-              <%= current_user.name %>
-            <% end %>
-          </div>
-        </div>
-      </div>
+    <div style="width:100%">
+      <% if !current_user %>
+        <%= link_to 'Đăng nhập', new_user_session_path %>
+      <% else %>
+        <%= link_to 'Đăng xuất', destroy_user_session_path, method: 'delete' %>
+        <%= link_to "#{current_user.name}", user_path(current_user.id) %>
+      <% end %>
     </div>
-    <%= yield %>
+    <h1>Green Style</h1>
+    <p>Trải nghiệm xanh, cuộc sống xanh</p>
+    
+    <div>
+      <div style="width:20%; float: left">
+        <% Category.where(category_id: nil).all.each do |cate| %>
+          <%= link_to "#{cate.name}", products_path %> <br/>
+          <% cate.categories.each do |sub_cate| %>
+            - <%= link_to "#{sub_cate.name}", products_path %> <br/>
+          <% end %> <!-- end sub_cate -->
+        <% end %> <!-- end cate -->
+      </div> <!-- div for menu -->
+      <%= link_to "Thêm sản phẩm", new_product_path %>
+      <div style="width:80%">
+        <%= yield %>
+      <div> <!-- div for frame -->
+    </div>
   </body>
 </html>

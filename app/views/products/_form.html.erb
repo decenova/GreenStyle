@@ -1,0 +1,65 @@
+<%= form_with(model: product, local: true) do |form| %>
+  <div class="field">
+    Tên sản phẩm:
+    <%= form.text_field :name %>
+  </div>
+  <div class="field">
+    Dòng sản phẩm: <br/>
+    <% if @category %>
+      <%= select_tag "category_id", options_from_collection_for_select(Category.parent_cate, :id, :name, "#{@category.category_id}") %>
+    <% else %>
+      <%= select_tag "category_id", options_from_collection_for_select(Category.parent_cate, :id, :name),
+        :onChange => "getBrandAndTypeByCategoryId(this.options[this.selectedIndex].value)" %>
+    <% end %>
+  </div>
+  <div class="field">
+    Hãng sản phẩm:
+    <% if action_name == 'new'%>
+      <div id="brand_select">
+        <%= form.select "brand_id", '<option></option>', 
+              {prompt: '-----Chọn hãng-----'} %>
+      </div> <!-- div select -->
+    <% else %>
+      <%= select_tag "category_id", options_from_collection_for_select(Category.sub_cate(@category.category_id), :id, :name, "#{@category.id}") %>
+    <% end %>
+  </div>
+  <div class="field">
+    Các loại: <br/>
+    <div id="type_check">
+    </div>
+  </div>
+  <div class="field">
+    Hình sản phẩm: <br/>
+    <% if action_name == 'new'%>
+      <%= form.file_field :image_url %>
+    <% elsif action_name == 'edit'%>
+      <% if product.image_url.url %>
+        <% if product.image_url_identifier.include? Product::IMAGE_ONLINE_LINK %>
+          <%= image_tag product.image_url_identifier, size: "100x100" %>
+        <% else %>
+          <%= image_tag product.image_url.url, size: "100x100" %>
+        <% end %>
+      <% end %> <!-- end elsif new -->
+      <%= form.file_field :image_url %>
+    <% end %> <!-- end if new -->
+  </div>
+
+  <div class="field">
+    Giá cả (VNĐ):
+    <%= form.text_field :price %>
+  </div>
+
+  <div class="field">
+    Số lượng:
+    <%= form.number_field :quantity %>
+  </div>
+
+  <div class="field">
+    Bảo hành:
+    <%= form.text_field :warranty %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %> <!-- end form -->

@@ -1,0 +1,22 @@
+[
+	{
+		"cateId": 1,
+		"typeIds": ["1", "2", "3"]
+	},
+	{
+		"cateId": 2,
+		"typeIds": ["4"]
+	},
+	{
+		"cateId": 3,
+		"typeIds": ["5", "3"]
+	},
+	{
+		"cateId": 4,
+		"typeIds": ["6", "3"]
+	},
+	{
+		"cateId": 5,
+		"typeIds": ["6"]
+	}
+]

@@ -1,0 +1,192 @@
+[
+  {
+    "id": 0,
+    "name": "Bàn phím cơ",
+    "categoryId": ""
+  },
+  {
+    "id": 1,
+    "name": "Keycap",
+    "categoryId": ""
+  },
+  {
+    "id": 2,
+    "name": "Chuột",
+    "categoryId": ""
+  },
+  {
+    "id": 3,
+    "name": "Tai nghe",
+    "categoryId": ""
+  }, 
+  {
+    "id": 4,
+    "name": "Loa",
+    "categoryId": ""
+  },
+  {
+    "id": 0,
+    "name": "Bàn phím cơ Filco",
+    "categoryId": "1"
+  },
+  {
+    "id": 1,
+    "name": "Bàn phím cơ Realforce",
+    "categoryId": "1"
+  },
+  {
+    "id": 2,
+    "name": "Bàn phím cơ Razer",
+    "categoryId": "1"
+  },
+  {
+    "id": 3,
+    "name": "Bàn phím cơ Steelseries",
+    "categoryId": "1"
+  },
+  {
+    "id": 4,
+    "name": "Bàn phím cơ Corsair",
+    "categoryId": "1"
+  },
+  {
+    "id": 5,
+    "name": "Bàn phím cơ HyperX",
+    "categoryId": "1"
+  },
+  {
+    "id": 6,
+    "name": "Bàn phím cơ Logitech",
+    "categoryId": "1"
+  },
+  {
+    "id": 7,
+    "name": "Bàn phím cơ Alienware",
+    "categoryId": "1"
+  },
+  {
+    "id": 8,
+    "name": "Bàn phím cơ Dare-U",
+    "categoryId": "1"
+  },
+  {
+    "id": 9,
+    "name": "Keycap Filco",
+    "categoryId": "2"
+  },
+  {
+    "id": 10,
+    "name": "Keycap Dwarf Factory",
+    "categoryId": "2"
+  },
+  {
+    "id": 11,
+    "name": "Keycap HolyOOPS",
+    "categoryId": "2"
+  },
+  {
+    "id": 12,
+    "name": "Keycap Imsto",
+    "categoryId": "2"
+  },
+  {
+    "id": 13,
+    "name": "Chuột Razer",
+    "categoryId": "3"
+  },
+  {
+    "id": 14,
+    "name": "Chuột Steelseries",
+    "categoryId": "3"
+  },
+  {
+    "id": 15,
+    "name": "Chuột Corsair",
+    "categoryId": "3"
+  },
+  {
+    "id": 16,
+    "name": "Chuột Logitech",
+    "categoryId": "3"
+  },
+  {
+    "id": 17,
+    "name": "Chuột Zowie",
+    "categoryId": "3"
+  },
+  {
+    "id": 18,
+    "name": "Chuột Alienware",
+    "categoryId": "3"
+  },
+  {
+    "id": 19,
+    "name": "Chuột Mionix",
+    "categoryId": "3"
+  },
+  {
+    "id": 20,
+    "name": "Chuột Roccat",
+    "categoryId": "3"
+  },
+  {
+    "id": 28,
+    "name": "Tai nghe Razer",
+    "categoryId": "4"
+  },
+  {
+    "id": 29,
+    "name": "Tai nghe Steelseries",
+    "categoryId": "4"
+  },
+  {
+    "id": 30,
+    "name": "Tai nghe HyperX",
+    "categoryId": "4"
+  },
+  {
+    "id": 31,
+    "name": "Tai nghe Logitech",
+    "categoryId": "4"
+  },
+  {
+    "id": 32,
+    "name": "Tai nghe Corsair",
+    "categoryId": "4"
+  },
+  {
+    "id": 33,
+    "name": "Tai nghe Sennheiser",
+    "categoryId": "4"
+  },
+  {
+    "id": 34,
+    "name": "Tai nghe Roccat",
+    "categoryId": "4"
+  },
+  {
+    "id": 35,
+    "name": "Loa Razer",
+    "categoryId": "5"
+  },
+  {
+    "id": 36,
+    "name": "Loa Logitech",
+    "categoryId": "5"
+  },
+  {
+    "id": 37,
+    "name": "Loa Creative",
+    "categoryId": "5"
+  },
+  {
+    "id": 38,
+    "name": "Loa Braven",
+    "categoryId": "5"
+  },
+  {
+    "id": 39,
+    "name": "Loa Dynaudio",
+    "categoryId": "5"
+  }
+]

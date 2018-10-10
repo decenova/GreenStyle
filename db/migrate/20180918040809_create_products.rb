@@ -5,6 +5,7 @@ class CreateProducts < ActiveRecord::Migration[5.2]
       t.string :image_url
       t.decimal :price
       t.integer :quantity
+      t.string :warranty
       t.belongs_to :category
       t.belongs_to :order_detail
 
