@@ -1,0 +1,118 @@
+[{
+    "name": "Loại bàn phím",
+    "typeId": ""
+}, {
+    "name": "Loại switch",
+    "typeId": ""
+}, {
+    "name": "LED",
+    "typeId": ""
+}, {
+    "name": "Keyset",
+    "typeId": ""
+}, {
+    "name": "Loại chuột",
+    "typeId": ""
+}, {
+    "name": "Âm thanh",
+    "typeId": ""
+}, {
+    "name": "Fullsize",
+    "typeId": "1"
+}, {
+    "name": "Tenkeyless",
+    "typeId": "1"
+}, {
+    "name": "Mini",
+    "typeId": "1"
+}, {
+    "name": "Blue switch",
+    "typeId": "2"
+}, {
+    "name": "Brown switch",
+    "typeId": "2"
+}, {
+    "name": "Red switch",
+    "typeId": "2"
+}, {
+    "name": "Black switch",
+    "typeId": "2"
+}, {
+    "name": "Pink switch",
+    "typeId": "2"
+}, {
+    "name": "Silver switch",
+    "typeId": "2"
+}, {
+    "name": "Topre",
+    "typeId": "2"
+}, {
+    "name": "Khác",
+    "typeId": "2"
+}, {
+    "name": "RGB",
+    "typeId": "3"
+}, {
+    "name": "Đỏ",
+    "typeId": "3"
+}, {
+    "name": "Trắng",
+    "typeId": "3"
+}, {
+    "name": "Xanh lá",
+    "typeId": "3"
+}, {
+    "name": "Xanh dương",
+    "typeId": "3"
+}, {
+    "name": "Base",
+    "typeId": "4"
+}, {
+    "name": "Tenkeyless",
+    "typeId": "4"
+}, {
+    "name": "Numpad",
+    "typeId": "4"
+}, {
+    "name": "Novelty",
+    "typeId": "4"
+}, {
+    "name": "Japanese",
+    "typeId": "4"
+}, {
+    "name": "Matcha",
+    "typeId": "4"
+}, {
+    "name": "Quang",
+    "typeId": "5"
+}, {
+    "name": "Laser",
+    "typeId": "5"
+}, {
+    "name": "Stereo",
+    "typeId": "6"
+}, {
+    "name": "Virtual 5.1",
+    "typeId": "6"
+}, {
+    "name": "Virtual 7.1",
+    "typeId": "6"
+}, {
+    "name": "True 2.1",
+    "typeId": "6"
+}, {
+    "name": "True 2.2",
+    "typeId": "6"
+}, {
+    "name": "True 5.1",
+    "typeId": "6"
+}, {
+    "name": "True 7.1",
+    "typeId": "6"
+}, {
+    "name": "DTS Headphone: X v2.0",
+    "typeId": "6"
+}, {
+    "name": "DTS:X",
+    "typeId": "6"
+}]

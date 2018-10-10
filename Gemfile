@@ -3,6 +3,17 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
+gem 'rails-i18n'
+
+gem 'nokogiri'
+
+#upload image
+gem 'carrierwave'
+gem 'mini_magick'
+
+gem 'kaminari'
+gem 'bootstrap4-kaminari-views'
+
 gem 'devise'
 #rails
 
