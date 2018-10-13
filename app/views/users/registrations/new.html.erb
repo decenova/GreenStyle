@@ -1,35 +1,66 @@
-<h2>Đăng ký</h2>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Green style | Make your life green</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
 
-  <div class="field">
-    Email<br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+  <body>
+    <div>
+      <div class="login__background"></div>
+      <div class="block--absolute block--position-center login__container">
+        <div>
+          <h2><span class="login__logo">Green</span> style</h2>
+          <h1>Đăng ký</h1>
+        </div>
+        <div class="login__form">
+          <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+            <%= devise_error_messages! %>
+            <div class="group--input">
+              <label for="txtEmail">Email</label>
+              <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+            </div>
 
-  <div class="field">
-    Tên bạn<br />
-    <%= f.text_field :name, autofocus: true %>
-  </div>
-  
-  <div class="field">
-    Mật khẩu
-    <% if @minimum_password_length %>
-    <em>(Tối thiểu <%= @minimum_password_length %> ký tự)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
+            <div class="group--input">
+              <label for="txtName">Tên của bạn</label>
+              <%= f.text_field :name, autofocus: true %>
+            </div>
 
-  <div class="field">
-    Nhập lại mật khẩu<br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
+            <div class="group--input">
+              <label for="txtPassword">Password</label>
+              <% if @minimum_password_length %>
+              <em>(Tối thiểu <%= @minimum_password_length %> ký tự)</em>
+              <% end %><br />
+              <%= f.password_field :password, autocomplete: "off" %>
+            </div>
 
-  <div class="actions">
-    <%= f.submit "Đăng ký" %>
-  </div>
-<% end %>
+            <div class="group--input">
+              <label for="txtPassword_confirmation">Nhập lại mật khẩu</label>
+              <%= f.password_field :password_confirmation, autocomplete: "off" %>
+            </div>
 
-<%= render "users/shared/links" %>
-<%= link_to 'Về trang chủ', root_path %>
+            <div class="group--input">
+              <%= f.submit "Đăng ký", class: 'btn btn--position-right btn--type-success' %>
+              <div class="clearfloat"></div>
+            </div>
+
+            <div class="login__link">
+              <%= render "users/shared/links" %>
+              <%= link_to 'Về trang chủ', root_path %>
+            </div>
+
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>

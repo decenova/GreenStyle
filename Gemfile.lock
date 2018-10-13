@@ -264,7 +264,10 @@ DEPENDENCIES
   listen (>= 3.0.5, < 3.2)
   mini_magick
   nokogiri
+<<<<<<< HEAD
   pg
+=======
+>>>>>>> ca6db7c9c35446d8cf6b2e46f0e413faf6eda925
   puma (~> 3.11)
   rails (~> 5.2.0)
   rails-i18n
