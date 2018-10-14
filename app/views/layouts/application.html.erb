@@ -53,18 +53,18 @@
     <%# <%= yield %>
     <%# %>
     <div>
-      <div style="width:20%; float: left">
+      <div style="width:20%; float: left; margin-top: 100px">
+        <%= link_to 'Tất cả sản phẩm', products_path %> <br/>
         <% Category.where(category_id: nil).all.each do |cate| %>
-          <%= link_to "#{cate.name}", products_path %> <br/>
+          <%= link_to "#{cate.name}", show_category_product_path(cate.id) %> <br/>
           <% cate.categories.each do |sub_cate| %>
-            - <%= link_to "#{sub_cate.name}", products_path %> <br/>
+            - <%= link_to "#{sub_cate.name}", show_category_product_path(sub_cate.id) %> <br/>
           <% end %> <!-- end sub_cate -->
         <% end %> <!-- end cate -->
       </div> <!-- div for menu -->
-      <%= link_to "Thêm sản phẩm", new_product_path %>
-      <div style="width:80%">
+      <div style="width:60%; float: left">
         <%= yield %>
-      <div> <!-- div for frame -->
+      </div> <!-- div for frame -->
     </div>
   </body>
 </html>

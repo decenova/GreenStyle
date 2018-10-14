@@ -7,6 +7,12 @@ class ProductsController < ApplicationController
     @products = Product.all.newest.page params[:page]
   end
 
+  def search_by_name
+    @products = Product.where('name LIKE ?', "%#{params[:search_name]}%").newest.page params[:page]
+    @product_size = @products.size
+    render :index
+  end
+
   # GET /products/1
   # GET /products/1.json
   def show

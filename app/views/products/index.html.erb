@@ -1,20 +1,41 @@
-<table>
-  <tbody>
-    <% @products.each do |product| %>
-      <tr>
-        <% if product.image_url.url %>
-          <% if product.image_url_identifier.include? Product::IMAGE_ONLINE_LINK %>
-            <td><%= image_tag(product.image_url_identifier, size: "50x50") %></td>
-          <% else %>
-            <td><%= image_tag(product.image_url.url, size: "50x50") %></td>
-          <% end %> <!-- end identifier  -->
-        <% end %> <!-- end image url -->
-        <td><%= product.name %></td>
-        <td><%= number_to_currency(product.price) %></td>
-        <td><%= link_to 'Show', product %></td>
-      </tr>
+<div>
+  <div style="width: 80%; float: left">
+    <% if !@products.empty? %>
+      <table>
+        <tbody>
+          <% @products.each do |product| %>
+            <tr>
+              <% if product.image_url.url %>
+                <% if product.image_url_identifier.include? Product::IMAGE_ONLINE_LINK %>
+                  <td><%= image_tag(product.image_url_identifier, size: "50x50") %></td>
+                <% else %>
+                  <td><%= image_tag(product.image_url.url, size: "50x50") %></td>
+                <% end %> <!-- end identifier  -->
+              <% end %> <!-- end image url -->
+              <td><%= link_to "#{product.name}", product %></td>
+              <td><%= number_to_currency(product.price) %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+      <%= paginate @products %> 
+    <% else %>
+      <h2>Không tìm thấy kết quả nào!</h2>
     <% end %>
-  </tbody>
-</table>
-<%= paginate @products %> 
-<%= link_to 'New Product', new_product_path %>
+  </div>
+  <div style="width: 20%; float: left; margin-top: 100px"> <!-- search -->
+    <%= link_to "Thêm sản phẩm", new_product_path %>
+    <%= form_tag("/search_by_name", method: "get") do %>
+      <%= text_field_tag :search_name %>
+      <%= button_tag("Tìm kiềm") %>
+    <% end %>
+    <% if @category_type %>
+      <% @category_type.each do |item_type| %>
+        <b><%= item_type.name %></b> <br/>
+        <% item_type.types.each do |item_subtype| %> 
+          <%= check_box_tag "search_type", "#{item_subtype.name}" %> <%= item_subtype.name %> <br/>
+        <% end %>
+      <% end %>
+    <% end %>
+  </div>
+</div>
