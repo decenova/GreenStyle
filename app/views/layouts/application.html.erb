@@ -19,24 +19,25 @@
             <p class="font--size-xlarge line--height-large"><span class="logo logo--color-green">Green</span> style</p>
         </div>
         <div class="menu block--height-full">
-          <div class="menu__item">
-            <p>Trang chủ</p>
-          </div>
-          <div class="menu__item">
-            <p>Bàn phím cơ</p>
-          </div>
-          <div class="menu__item">
-            <p>Chuột</p>
-          </div>
-          <div class="menu__item">
-            <p>Key cap</p>
-          </div>
-          <div class="menu__item">
-            <p>Tai nghe</p>
-          </div>
-          <div class="menu__item">
-            <p>Loa</p>
-          </div>
+            <div class="menu__item menu__item--color-black menu__item--color-white--hover">
+              <div class="menu__item__title">
+                <%= link_to "Trang chủ", root_path %>
+              </div>
+            </div>
+          <% Category.where(category_id: nil).all.each do |cate| %>
+            <div class="menu__item menu__item--color-black menu__item--color-white--hover">
+              <div class="menu__item__title">
+                <%= link_to "#{cate.name}", products_path %>
+              </div>
+              <div class="menu__item__drop">
+                <% cate.categories.each do |sub_cate| %>
+                  <div class="menu__item__drop__item">
+                    <%= link_to "#{sub_cate.name}", products_path %>
+                  </div>
+                <% end %> <!-- end sub_cate -->
+              </div>
+            </div>
+          <% end %> <!-- end cate -->
         </div>
         <div class="menu__user__container block--relative">
           <div class="menu__user__login line--height-large">
@@ -50,6 +51,7 @@
         </div>
       </div>
     </div>
+<<<<<<< HEAD
     <%# <%= yield %>
     <%# %>
     <div>
@@ -65,6 +67,11 @@
       <div style="width:60%; float: left">
         <%= yield %>
       </div> <!-- div for frame -->
+=======
+    <%= yield %>
+    <div>
+      <%= link_to "Thêm sản phẩm", new_product_path %>
+>>>>>>> 1756ea5c1d1265248d35210718b611d543137ea8
     </div>
   </body>
 </html>
