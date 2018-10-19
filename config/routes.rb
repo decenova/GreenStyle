@@ -4,6 +4,14 @@ Rails.application.routes.draw do
     sessions: 'users/sessions',
     registrations: 'users/registrations'
   }
+  scope module: :users do
+    resources :users, only: [:show, :edit] do
+      collection do
+        patch 'update_password'
+      end
+    end
+  end
+
   devise_for :admin, only: [:session], controllers: {
     sessions: 'admin/sessions',
   }
@@ -16,5 +24,4 @@ Rails.application.routes.draw do
   get '/get_type_by_cate_id', to: "types#get_type_by_cate_id"
   get '/get_subtype_by_type_id', to: "types#get_subtype_by_type_id"
   
-
 end

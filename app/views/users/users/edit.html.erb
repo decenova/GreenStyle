@@ -1,0 +1,19 @@
+<h2>Thay đổi mật khẩu</h2>
+<%= form_for(@user, :url => { :action => "update_password" } ) do |f| %>
+  <div class="field">
+    Mật khẩu hiện tại <i>(Bạn cần nhập đúng mật khẩu hiện tại)</i><br />
+    <%= f.password_field :current_password %>
+  </div>
+  <div class="field">
+    Mật khẩu mới<br />
+    <%= f.password_field :password, :autocomplete => "off"  %>
+  </div>
+  <div class="field">
+    Xác thực mật khẩu mới<br />
+    <%= f.password_field :password_confirmation %>
+  </div>
+  <div class="action_container">
+    <%= f.submit("Đổi mật khẩu") %>
+  </div>
+  <%= link_to 'Trở về', :back %>
+<% end %>
