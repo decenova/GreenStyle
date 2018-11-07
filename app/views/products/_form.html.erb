@@ -1,10 +1,11 @@
+<div class="form__contain">
 <%= form_with(model: product, local: true) do |form| %>
-  <div class="field">
-    Tên sản phẩm:
+  <div class="group--input">
+    <label>Tên sản phẩm:</label>
     <%= form.text_field :name %>
   </div>
-  <div class="field">
-    Dòng sản phẩm: <br/>
+  <div class="group--input">
+    <label>Dòng sản phẩm:</label>
     <% if @category %>
       <%= select_tag "category_id", options_from_collection_for_select(Category.parent_cate, :id, :name, "#{@category.category_id}") %>
     <% else %>
@@ -12,8 +13,8 @@
         :onChange => "getBrandAndTypeByCategoryId(this.options[this.selectedIndex].value)" %>
     <% end %>
   </div>
-  <div class="field">
-    Hãng sản phẩm:
+  <div class="group--input">
+    <label>Hãng sản phẩm:</label>
     <% if action_name == 'new'%>
       <div id="brand_select">
         <%= form.select "brand_id", '<option></option>', 
@@ -23,13 +24,13 @@
       <%= select_tag "category_id", options_from_collection_for_select(Category.sub_cate(@category.category_id), :id, :name, "#{@category.id}") %>
     <% end %>
   </div>
-  <div class="field">
-    Các loại: <br/>
+  <div class="group--input">
+    <label>Các loại: </label>
     <div id="type_check">
     </div>
   </div>
-  <div class="field">
-    Hình sản phẩm: <br/>
+  <div class="group--input">
+    <label>Hình sản phẩm: </label>
     <% if action_name == 'new'%>
       <%= form.file_field :image_url %>
     <% elsif action_name == 'edit'%>
@@ -44,22 +45,23 @@
     <% end %> <!-- end if new -->
   </div>
 
-  <div class="field">
-    Giá cả (VNĐ):
+  <div class="group--input">
+    <label>Giá cả (VNĐ):</label>
     <%= form.text_field :price %>
   </div>
 
-  <div class="field">
-    Số lượng:
+  <div class="group--input">
+    <label>Số lượng:</label>
     <%= form.number_field :quantity %>
   </div>
 
-  <div class="field">
-    Bảo hành:
+  <div class="group--input">
+    <label>Bảo hành:</label>
     <%= form.text_field :warranty %>
   </div>
 
-  <div class="actions">
+  <div class="group--input">
     <%= form.submit %>
   </div>
 <% end %> <!-- end form -->
+</div>

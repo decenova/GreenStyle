@@ -67,3 +67,40 @@ body {
   color: #fff;
 }
 
+.product__detail__contain{
+  display: flex;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product__image__contain{
+  position: relative;
+  width: 50%;
+  height: 100%;
+  min-height: 400px;
+}
+.product__detail__info{
+  width: 50%;
+}
+
+
+nav.pagination{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+nav>span{
+  min-width: 48px;
+  height: 48px;
+  font-size: 1.2em;
+  line-height: 48px;
+  margin: 5px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.form__contain{
+  max-width: 1024px;
+  margin: auto;
+}
