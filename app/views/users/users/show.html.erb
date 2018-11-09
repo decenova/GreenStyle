@@ -1,18 +1,27 @@
+<div class="block--height-large"></div>
+<div class="form__contain">
 <h2>Thông tin khách hàng</h2>
 <div>
-	<div class="field">
-		Email: <%= @user.email %>
+	<div class="group--input">
+    <label>Email: </label>
+    <b><%= @user.email %></b>
   </div>
-  <div class="field">
-    Tên khách hàng: <%= @user.name %>
+  <div class="group--input">
+    <label>Tên khách hàng: </label> 
+    <b><%= @user.name %></b>
   </div>
-  <div class="field">
-    Địa chỉ: <%= @user.address %>
+  <div class="group--input">
+    <label>Địa chỉ: </label> 
+    <b><%= @user.address %></b>
   </div>
-  <div class="field">
-    Điện thoại: <%= @user.phone %>
+  <div class="group--input">
+    <label>Điện thoại: </label> 
+    <b><%= @user.phone %></b>
   </div>
+  <hr/>
+  <div>
 	<%= link_to 'Thay đổi thông tin', edit_user_registration_path %> |
   <%= link_to 'Thay đổi mật khẩu', edit_user_path(@user.id) %> |
 	<%= link_to 'Trở về', :back %>
+  </div>
 </div>
