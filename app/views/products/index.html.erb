@@ -11,30 +11,52 @@
       <%= paginate @products %>
     </div>
   </div>
-
-  <div style="width:100%; float: left">
-    <!-- div for menu -->
-    <div style="width:30%; float: left">
-      <%= link_to 'Tất cả sản phẩm', products_path %> <br/>
-      <% Category.where(category_id: nil).all.each do |cate| %>
-        <%= link_to "#{cate.name}", show_category_product_path(cate.id) %> <br/>
-        <% cate.categories.each do |sub_cate| %>
-          - <%= link_to "#{sub_cate.name}", show_category_product_path(sub_cate.id) %> <br/>
-        <% end %> <!-- end sub_cate -->
-      <% end %> <!-- end cate -->
-    </div> 
-    <!-- div index product -->
-    <div style="width: 50%; float: left">
-      <% if !@products.empty? %>
-        <!-- image -->
-        <% @products.each do |product| %>
-          <%= render "product_row", product: product, order_detail: @order_detail%>
-        <% end %>
-        <%= paginate @products %> 
+<div class="background--color-greengray">
+  <div class="block--height-large"></div>
+  <div class="block--height-large"></div>
+  <%= link_to 'New Product', new_product_path %>
+  <%= paginate @products %> 
+  <div class="banner__container block--margin-auto">
+    <% @products.each_with_index do |product, index| %>
+      <a href="<%= product_path(product.id)%>">
+      <% if (index % 7 == 0) %>
+        <div class="banner__item banner__item--big block--float-left">
+      <% elsif (index % 7 == 1) %>
+        <div class="banner__item banner__item--medium block--float-left">
+      <% elsif (index % 7 == 4) %>
+        <div class="banner__item banner__item--medium block--float-right">
+      <% elsif (index % 7 == 5 || index % 7 == 6) %>
+        <div class="banner__item banner__item--small block--float-right">
       <% else %>
-        <h2>Không tìm thấy kết quả nào!</h2>
+        <div class="banner__item banner__item--small block--float-left">  
       <% end %>
-    </div>
+
+        <% if product.image.url %>
+          <% if product.image_identifier.include? Product::IMAGE_ONLINE_LINK %>
+            <%# <%= image_tag product.image_identifier, size: "50x50" %>
+            <div class="background" style="background-image: url(<%= product.image_identifier %>);"></div>
+          <% else %>
+            <%# <%= image_tag product.image.url, size: "50x50"  %>
+            <div class="background" style="background-image: asset-url(<%= image(product.image.url) %>);"></div>
+          <% end %> <!-- end identifier  -->
+        <% end %> <!-- end image url -->
+
+        <div class="banner__info">
+          <p class="banner__info__name text--ellipsis">
+            <%= link_to "#{product.name}", product_path(product.id) %>
+          </p>
+          <p class="banner__info__price text--ellipsis">
+            <%= number_to_currency(product.price) %>
+          </p>
+        </div>
+      </div>
+      </a>  
+    <% end %>
+    <div style="clear: both;"></div>
+  </div>
+
+  <%= paginate @products %> 
+</div>
     <!-- div search by type -->
     <div style="width: 20%; float: left">
       <% if @category_type %>
@@ -46,6 +68,6 @@
         <% end %>
       <% end %>
     </div>
-  </div>
-
 </div>
+
+

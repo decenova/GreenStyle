@@ -1,21 +1,23 @@
 
-<div style="width: 100%; margin-top: 150px">
-  <%# <div style="width: 30%; float: left"></div> %>
-  <div style="width: 40%; float: left; margin-left: 500px">
-    <!-- show product info -->
+<div class="block--height-large"></div>
+  <div class="block--height-large"></div>
+<div class="product__detail__contain">
+  <div class="product__image__contain">
     <% if @product.image.url %>
       <% if @product.image_identifier.include? Product::IMAGE_ONLINE_LINK %>
-        <%= image_tag @product.image_identifier, size: "200x200" %>
+        <%# <%= image_tag product.image_identifier, size: "50x50" %>
+        <div class="background" style="background-image: url(<%= @product.image_identifier %>);"></div>
       <% else %>
-        <%= image_tag @product.image.url, size: "200x200" %>
-      <% end %>
-    <% end %>
+        <%# <%= image_tag product.image.url, size: "50x50"  %>
+        <div class="background" style="background-image: asset-url(<%= image(@product.image.url) %>);"></div>
+      <% end %> <!-- end identifier  -->
+    <% end %> <!-- end image url -->
+  </div>
+  <div class="product__detail__info">
+    <h1><%= @product.name %></h1>
+    <h2 style="color: red"><%= number_to_currency(@product.price) %></h2>
     <br/>
-    <%= @product.name %>
-    <br/>
-    <%= number_to_currency(@product.price) %>
-    <br/>
-    <!-- show types -->
+
     <% @pro_types.each do |t| %> <!-- pro có những type nào -->
       <% @tmp_radio = false %> <!-- mặc đinh là kiểu text (radio false) -->
       <% if @tmp != t.type_id %> <!-- nếu id ko trùng thì in ra tên super type -->
@@ -25,14 +27,12 @@
         <!-- nên phải in ra kiểu radio, để trong lúc order -->
       <% end %>
       <% @tmp = t.type_id %> <!-- gán type_id cho 1 biến tạm để so sánh -->
-      - <%= t.name %> <br/>
+      &nbsp;&nbsp;<%= t.name %> <br/>
     <% end %>
-    Bảo hành:
-    <%= @product.warranty %> <br/>
-    <%= number_field_tag(:quantity, "1", min: 1) %>
+    <p>
+      Bảo hành: <%= @product.warranty %> <br/>
+    </p>
     <%= button_to("Mua ngay") %>
-
-    <%= link_to 'Back', products_path %> | <%= link_to 'Sửa thông tin', edit_product_path %>
   </div>
-  <%# <div style="width: 30%; float: left"></div> %>
 </div>
+<%= link_to 'Back', products_path %> | <%= link_to 'Sửa thông tin', edit_product_path %>

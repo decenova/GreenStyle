@@ -1,19 +1,22 @@
+<div class="block--height-large"></div>
+<div class="form__contain">
 <h2>Thay đổi mật khẩu</h2>
 <%= form_for(@user, :url => { :action => "update_password" } ) do |f| %>
-  <div class="field">
-    Mật khẩu hiện tại <i>(Bạn cần nhập đúng mật khẩu hiện tại)</i><br />
+  <div class="group--input">
+    <label>Mật khẩu hiện tại <i>(Bạn cần nhập đúng mật khẩu hiện tại)</i></label>
     <%= f.password_field :current_password %>
   </div>
-  <div class="field">
-    Mật khẩu mới<br />
+  <div class="group--input">
+  <label>Mật khẩu mới</label>
     <%= f.password_field :password, :autocomplete => "off"  %>
   </div>
-  <div class="field">
-    Xác thực mật khẩu mới<br />
+  <div class="group--input">
+  <label>Xác thực mật khẩu mới</label>
     <%= f.password_field :password_confirmation %>
   </div>
-  <div class="action_container">
+  <div class="group--input">
     <%= f.submit("Đổi mật khẩu") %>
   </div>
   <%= link_to 'Trở về', :back %>
 <% end %>
+</div>

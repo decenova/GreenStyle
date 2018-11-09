@@ -19,7 +19,7 @@ types.each do |type|
 end
 
 products.each_with_index do |product, index|
-	Product.create!(name: product['name'], image: "https://www.phongcachxanh.vn" + product['imgUrl'],
+	Product.create!(name: product['name'], image: 'https://www.phongcachxanh.vn' + product['imgUrl'],
 	price: product['price'].to_i * 1000000, quantity: '100',
 	warranty: product['warranty'], active: true, category_id: product['categoryId'])
 	if product['types']
