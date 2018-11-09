@@ -1,11 +1,10 @@
 
-<div class="block--size-fullview background--color-greengray">
+<div class="overflow-auto block--size-fullview background--color-greengray">
 <div class="block--height-large"></div>
 <div class="block--height-large"></div>
 <div class="block--fixwidth block--margin-auto">
   <button class="btn" onclick="updateCart()">Cập nhật giỏ hàng</button>
   <button class="btn" onclick="deleteAllProduct()">Xóa giỏ hàng</button>
-  <button class="btn" onclick="checkoutCart()">Xác nhận mua</button>
 </div>
 <div class="order__contain" >
   <div id="my-cart-id">
@@ -13,7 +12,7 @@
   </div>  
     <div class="order__total">
       <h1 id="totalPriceId">Tổng tiền: </h1>
-      <button class="btn">Checkout</button>
+      <button class="btn" onclick="checkoutCart()">Checkout</button>
     </div>
 </div>
 </div>

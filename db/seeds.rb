@@ -7,7 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 categories = ActiveSupport::JSON.decode(File.read('db/seeds/categories.json'))
 types = ActiveSupport::JSON.decode(File.read('db/seeds/types.json'))
-products = ActiveSupport::JSON.decode(File.read('db/seeds/products_keyboard.json'))
+products = ActiveSupport::JSON.decode(File.read('db/seeds/products.json'))
+# products2 = ActiveSupport::JSON.decode(File.read('db/seeds/products_mouse.json'))
+# products3 = ActiveSupport::JSON.decode(File.read('db/seeds/products_keycap.json'))
+# products4 = ActiveSupport::JSON.decode(File.read('db/seeds/products_headphone.json'))
+# products5 = ActiveSupport::JSON.decode(File.read('db/seeds/products_sound.json'))
 categories_types = ActiveSupport::JSON.decode(File.read('db/seeds/categories_types.json'))
 
 categories.each do |category|
@@ -36,10 +40,5 @@ categories_types.each do |item|
 		cate.types << Type.find(id)
 	end
 end
-
-#data order status
-OrderStatus.delete_all
-OrderStatus.create! id: 1, name: "In Progress"
-OrderStatus.create! id: 2, name: "Placed"
-OrderStatus.create! id: 3, name: "Shipped"
-OrderStatus.create! id: 4, name: "Cancelled"
+#admin
+User.create!(email: 'hoanhtung.xy@gmail.com', password: "123456!!",  name: 'Hoành Tung', is_admin: true)

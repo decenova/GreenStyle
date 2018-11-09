@@ -1,5 +1,8 @@
 <div class="background--color-greengray">
   <div class="block--height-large"></div>
+  <% if current_user && current_user.is_admin == true %>
+    <%= link_to "Thêm sản phẩm", new_product_path %>
+  <% end %>
   <div class="block--height-large"></div>
   <div class="banner__container block--margin-auto">
     <% @products.each_with_index do |product, index| %>

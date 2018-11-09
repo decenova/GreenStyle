@@ -1,6 +1,9 @@
 <div style="width: 100%"> 
 <div class="background--color-greengray">
   <div class="block--height-large"></div>
+  <% if current_user && current_user.is_admin == true %>
+    <%= link_to 'Thêm sản phẩm', new_product_path %>
+  <% end %>
   <div class="block--height-large"></div>
   <%= form_tag("/search_by_name", method: "get") do %>
     <div class="search__contain">
@@ -8,7 +11,6 @@
       <%= button_tag "Tìm kiếm", {class: 'btn search__button btn--borderradius-right'} %>
     </div>
   <% end %>
-  <%= link_to 'New Product', new_product_path %>
   <div class="banner__container block--margin-auto">
     <% @products.each_with_index do |product, index| %>
       <a href="<%= product_path(product.id)%>">
@@ -30,7 +32,7 @@
             <div class="background" style="background-image: url(<%= product.image_identifier %>);"></div>
           <% else %>
             <%# <%= image_tag product.image.url, size: "50x50"  %>
-            <div class="background" style="background-image: asset-url(<%= image(product.image.url) %>);"></div>
+            <div class="background" style="background-image: url(<%= image_url(product.image.url) %>);"></div>
           <% end %> <!-- end identifier  -->
         <% end %> <!-- end image url -->
 

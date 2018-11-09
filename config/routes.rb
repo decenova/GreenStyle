@@ -25,9 +25,6 @@ Rails.application.routes.draw do
     end
   end
 
-  devise_for :admin, only: [:session], controllers: {
-    sessions: 'admin/sessions',
-  }
   root 'welcome#home'
   concern :paginatable do
     get '(page/:page)', action: :index, on: :collection, as: ''

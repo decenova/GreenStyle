@@ -1,8 +1,5 @@
 class CartsController < ApplicationController
   skip_before_action :verify_authenticity_token 
-  def show
-   
-  end
   #ajax
   def add_to_cart
     respond_to do |format|
@@ -15,14 +12,13 @@ class CartsController < ApplicationController
               order_detail = OrderDetail.create(order_id: order.id,
                  product_id: value["productId"], quantity: value["quantity"], price: value["price"])
           end
-          format.json {render :json => {noti: "Success"}}
+          format.json {render :json => {noti: "Mua hàng thành công", flag: true}}
         else   
           puts @order.errors.details
-          format.json {render :json => {noti: "Fail"}}
+          format.json {render :json => {noti: "Mua hàng thất bại", flag: false}}
         end
       else
-        format.html {render 'index'}
-        format.json {render :json => {band: band}}
+        format.json {render :json => {noti: "Bạn cần phải đăng nhập.", flag: false}}
       end 
     end#end respond
   end

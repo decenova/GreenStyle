@@ -41,21 +41,20 @@
         </div>
         <!-- user -->
         <div class="menu__user__container block--relative">
-          <div class="menu__user__login">
-            <p class="text--ellipsis"><%= link_to 'Giỏ hàng', carts_path, :onclick =>  'getProductFromStorage();' %></p>
+          <div class="menu__user__login">          
             <% if !current_user %>
               <p class="text--ellipsis"><%= link_to 'Đăng nhập', new_user_session_path %></p>
+              <p class="text--ellipsis"><%= link_to 'Giỏ hàng', carts_path, :onclick =>  'getProductFromStorage();' %></p>
             <% else %>
               <p class="text--ellipsis"><%= link_to current_user.name, current_user %></p>
+              <p class="text--ellipsis"><%= link_to 'Giỏ hàng', carts_path, :onclick =>  'getProductFromStorage();' %></p>
               <p class="text--ellipsis"><%= link_to 'Đăng xuất', destroy_user_session_path, method: 'delete' %></p>
             <% end %>
+          
           </div>
         </div>  <!-- user -->
       </div>
     </div>
     <%= yield %>
-    <div>
-      <!-- <%= link_to "Thêm sản phẩm", new_product_path %> -->
-    </div>
   </body>
 </html>

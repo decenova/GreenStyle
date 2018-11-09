@@ -5,7 +5,6 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
     @products = Product.all.newest.page params[:page]
-    @order_detail = current_order.order_details.new
   end
 
   def search_by_name
@@ -37,9 +36,9 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       if @product.save
-        params[:type_ids].each do |id|
-          @product.types << Type.find(id)
-        end
+        # params[:type_ids].each do |id|
+        #   @product.types << Type.find(id)
+        # end
         format.html { redirect_to @product, notice: 'Product was successfully created.' }
         format.json { render :show, status: :created, location: @product }
       else
@@ -81,6 +80,6 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:name, :image_url, :price, :quantity, :warranty, :category_id)
+      params.require(:product).permit(:name, :image, :price, :quantity, :warranty, :category_id)
     end
 end

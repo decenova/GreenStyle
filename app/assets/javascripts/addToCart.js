@@ -133,6 +133,8 @@ function deleteAllProduct() {
         var cart_div = document.getElementById("my-cart-id");
         cart_div.innerHTML = "";
         initCart();
+        let totalSpan = document.getElementById('totalPriceId');
+        totalSpan.innerHTML = "";
     }
 }
 
@@ -151,21 +153,16 @@ function updateCart() {
 }
 
 function checkoutCart() {
-    // if (customerId === null || customerId === "") {
-    //     alert("Bạn cần đăng nhập để xác nhận mua hàng!");
-    //     return;
-    // }
-    // var result = confirm("Bạn có chắc chắn mua hàng?");
-    // if (result) {
-        myCartObj = JSON.parse(getLocalData(storageCartKey));
-        console.log(myCartObj);
-    // }
+    myCartObj = JSON.parse(getLocalData(storageCartKey));
     $.ajax({
         url: '/add_to_cart',
         method: 'post',
         data: {my_cart: myCartObj, total_price: totalPrice},
         success: function(data) {
             alert(data.noti);
+            if (data.flag) {
+                deleteAllProduct();
+            }
         }
     })
 }

@@ -24,11 +24,11 @@
       <%= select_tag "category_id", options_from_collection_for_select(Category.sub_cate(@category.category_id), :id, :name, "#{@category.id}") %>
     <% end %>
   </div>
-  <div class="group--input">
+  <!-- <div class="group--input">
     <label>Các loại: </label>
     <div id="type_check">
     </div>
-  </div>
+  </div> -->
   <div class="group--input">
     <label>Hình sản phẩm: </label>
     <% if action_name == 'new'%>
@@ -41,7 +41,7 @@
           <%= image_tag product.image.url, size: "100x100" %>
         <% end %>
       <% end %> <!-- end elsif new -->
-      <%= form.file_field :image_url %>
+      <%= form.file_field :image %>
     <% end %> <!-- end if new -->
   </div>
 
@@ -59,9 +59,8 @@
     <label>Bảo hành:</label>
     <%= form.text_field :warranty %>
   </div>
-
   <div class="group--input">
-    <%= form.submit %>
+    <%= form.submit %> | <%= link_to 'Trở về', products_path %>
   </div>
 <% end %> <!-- end form -->
 </div>

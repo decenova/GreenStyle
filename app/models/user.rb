@@ -4,5 +4,11 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
          
-    has_many :orders
+  has_many :orders
+  after_initialize :init
+
+  def init
+    self.is_admin ||= false
+  end
+
 end

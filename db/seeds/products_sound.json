@@ -1,0 +1,149 @@
+[{
+  "typeId": 4,
+  "url": "/shop/product/logitech-g560-11350?category=5",
+  "categoryId":  "35", "name": "Logitech G560",
+  "price": "5.659.000",
+  "imgUrl": "/web/image/product.template/11350/image?unique=a4d4601",
+  "warranty": "12 tháng\n", "types": ["39"]
+}, {
+  "typeId": 4,
+  "url": "/shop/product/razer-nommo-chroma-2-0-gaming-speakers-9780?category=5",
+  "categoryId":  "34", "name": "Razer Nommo Chroma - 2.0 Gaming Speakers",
+  "price": "3.989.000",
+  "imgUrl": "/web/image/product.template/9780/image?unique=88f653e",
+  "warranty": "12 tháng\n", "types": ["31"]
+}, {
+  "typeId": 4,
+  "url": "/shop/product/razer-nommo-2-0-gaming-speakers-9779?category=5",
+  "categoryId":  "34", "name": "Razer Nommo - 2.0 Gaming Speakers",
+  "price": "2.489.000",
+  "imgUrl": "/web/image/product.template/9779/image?unique=ac3c53c",
+  "warranty": "12 tháng\n", "types": ["31"]
+}, {
+  "typeId": 4,
+  "url": "/shop/product/creative-sound-blasterx-kratos-s5-8693?category=5",
+  "categoryId":  "36", "name": "Creative Sound BlasterX Kratos S5",
+  "price": "3.989.000",
+  "imgUrl": "/web/image/product.template/8693/image?unique=7c2f800",
+  "warranty": "12 tháng\n", "types": ["34"]
+}, {
+  "typeId": 4,
+  "url": "/shop/product/creative-sound-blasterx-kratos-s3-8692?category=5",
+  "categoryId":  "36", "name": "Creative Sound BlasterX Kratos S3",
+  "price": "1.989.000",
+  "imgUrl": "/web/image/product.template/8692/image?unique=6971b0f",
+  "warranty": "12 tháng\n", "types": ["34"]
+}, {
+  "typeId": 4,
+  "url": "/shop/product/creative-sound-blasterx-katana-7-1-8436?category=5",
+  "categoryId":  "36", "name": "Creative Sound BlasterX Katana 7.1",
+  "price": "7.889.000",
+  "imgUrl": "/web/image/product.template/8436/image?unique=c6f36ec",
+  "warranty": "12 tháng\n", "types": ["37"]
+}, {
+  "typeId": 4,
+  "url": "/shop/product/braven-brv-pro-portable-bluetooth-speaker-black-red-black-8263?category=5",
+  "categoryId":  "37", "name": "Braven BRV-Pro Portable Bluetooth Speaker - Black/Red/Black",
+  "price": "4.029.000",
+  "imgUrl": "/web/image/product.template/8263/image?unique=7d51a7c",
+  "warranty": "12 tháng\n" 
+}, {
+  "typeId": 4,
+  "url": "/shop/product/creative-inspire-t6300-speaker-6419?category=5",
+  "categoryId":  "36", "name": "Creative Inspire T6300 Speaker",
+  "price": "2.800.000",
+  "imgUrl": "/web/image/product.template/6419/image?unique=9cef6f0",
+  "warranty": "12 tháng\n", "types": ["36"]
+}, {
+  "typeId": 4,
+  "url": "/shop/product/creative-sbs-a550-5-1-speaker-6418?category=5",
+  "categoryId":  "36", "name": "Creative SBS A550 5.1 Speaker ",
+  "price": "1.790.000",
+  "imgUrl": "/web/image/product.template/6418/image?unique=1403a69",
+  "warranty": "12 tháng\n", "types": ["36"]
+}, {
+  "typeId": 4,
+  "url": "/shop/product/creative-inspire-t3300-speaker-6417?category=5",
+  "categoryId":  "36", "name": "Creative Inspire T3300 Speaker",
+  "price": "1.750.000",
+  "imgUrl": "/web/image/product.template/6417/image?unique=a7c0beb",
+  "warranty": "12 tháng\n", "types": ["34"]
+}, {
+  "typeId": 4,
+  "url": "/shop/product/creative-sbs-a350-2-1-speaker-6416?category=5",
+  "categoryId":  "36", "name": "Creative SBS A350 2.1 Speaker",
+  "price": "889.000",
+  "imgUrl": "/web/image/product.template/6416/image?unique=2381948",
+  "warranty": "12 tháng\n", "types": ["34"]
+}, {
+  "typeId": 4,
+  "url": "/shop/product/creative-sbs-a120-2-1-speaker-6415?category=5",
+  "categoryId":  "36", "name": "Creative SBS A120 2.1 Speaker",
+  "price": "630.000",
+  "imgUrl": "/web/image/product.template/6415/image?unique=e97655a",
+  "warranty": "12 tháng\n", "types": ["34"]
+}, {
+  "typeId": 4,
+  "url": "/shop/product/creative-gigaworks-t20-series-ii-2-0-speaker-6413?category=5",
+  "categoryId":  "36", "name": "Creative Gigaworks T20 Series II 2.0 Speaker",
+  "price": "3.299.000",
+  "imgUrl": "/web/image/product.template/6413/image?unique=0ea8722",
+  "warranty": "12 tháng\n", "types": ["31"]
+}, {
+  "typeId": 4,
+  "url": "/shop/product/creative-gigaworks-t40-series-ii-2-0-speaker-6414?category=5",
+  "categoryId":  "36", "name": "Creative Gigaworks T40 Series II 2.0 Speaker",
+  "price": "4.299.000",
+  "imgUrl": "/web/image/product.template/6414/image?unique=2eb19b6",
+  "warranty": "12 tháng\n", "types": ["31"]
+}, {
+  "typeId": 4,
+  "url": "/shop/product/creative-t15-bluetooth-wireless-2-0-speaker-6412?category=5",
+  "categoryId":  "36", "name": "Creative T15 Bluetooth Wireless 2.0 Speaker",
+  "price": "2.050.000",
+  "imgUrl": "/web/image/product.template/6412/image?unique=589b358",
+  "warranty": "12 tháng\n", "types": ["31"]
+}, {
+  "typeId": 4,
+  "url": "/shop/product/creative-t10-2-0-speaker-6411?category=5",
+  "categoryId":  "36", "name": "Creative T10 2.0 Speaker",
+  "price": "1.470.000",
+  "imgUrl": "/web/image/product.template/6411/image?unique=ae2ebdd",
+  "warranty": "12 tháng\n", "types": ["31"]
+}, {
+  "typeId": 4,
+  "url": "/shop/product/creative-sbs-a60-2-0-speaker-6410?category=5",
+  "categoryId":  "36", "name": "Creative SBS A60 2.0 Speaker",
+  "price": "369.000",
+  "imgUrl": "/web/image/product.template/6410/image?unique=a50e5c9",
+  "warranty": "12 tháng\n", "types": ["31"]
+}, {
+  "typeId": 4,
+  "url": "/shop/product/razer-leviathan-5411?category=5",
+  "categoryId":  "34", "name": "Razer Leviathan",
+  "price": "4.989.000",
+  "imgUrl": "/web/image/product.template/5411/image?unique=9336c31",
+  "warranty": "12 tháng\n", "types": ["32"]
+}, {
+  "typeId": 4,
+  "url": "/shop/product/razer-leviathan-mini-bluetooth-speaker-5410?category=5",
+  "categoryId":  "34", "name": "Razer Leviathan Mini Bluetooth Speaker",
+  "price": "3.979.000",
+  "imgUrl": "/web/image/product.template/5410/image?unique=84983d0",
+  "warranty": "12 tháng\n", "types": ["31"]
+}, {
+  "typeId": 4,
+  "url": "/shop/product/logitech-z906-5281?category=5",
+  "categoryId":  "35", "name": "Logitech Z906",
+  "price": "7.899.000",
+  "imgUrl": "/web/image/product.template/5281/image?unique=e65622d",
+  "warranty": "24 tháng\n", "types": ["36"]
+}, {
+  "typeId": 4,
+  "url": "/shop/product/logitech-z623-5280?category=5&page=2",
+  "categoryId":  "35", "name": "Logitech Z623",
+  "price": "3.509.000",
+  "imgUrl": "/web/image/product.template/5280/image?unique=122a85e",
+  "warranty": "24 tháng\n", "types": ["34"]
+}]
+
