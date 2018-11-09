@@ -124,29 +124,21 @@ function updateCart() {
     alert("Cập nhật thành công");
 }
 function checkoutCart() {
-    if (customerId === null || customerId === "") {
-        alert("Bạn cần đăng nhập để xác nhận mua hàng!");
-        return;
-    }
-    var result = confirm("Bạn có chắc chắn mua hàng?");
-    if (result == true) {
-        myCartObj = parseStringToArray(getLocalData(storageCartKey));
-        var productCart = "";
-        for (var i = 0, length = myCartObj.length; i < length; i++) {
-            productCart += myCartObj[i].productId + "," +
-                    myCartObj[i].quantity + "," + myCartObj[i].price + ";";
+    // if (customerId === null || customerId === "") {
+    //     alert("Bạn cần đăng nhập để xác nhận mua hàng!");
+    //     return;
+    // }
+    // var result = confirm("Bạn có chắc chắn mua hàng?");
+    // if (result) {
+        myCartObj = JSON.parse(getLocalData(storageCartKey));
+        console.log(myCartObj);
+    // }
+    $.ajax({
+        url: '/add_to_cart',
+        method: 'post',
+        data: {my_cart: myCartObj, total_price: totalPrice},
+        success: function(data) {
+            alert(data.noti);
         }
-        productCart = productCart.slice(0, productCart.length - 1);
-        xmlHttp = getXmlHttpObject();
-        xmlHttp.open("POST",
-                "./AddToCartController?action=NoLoad&productCartText=" + productCart + "&customerId=" + customerId + "&totalPrice=" + totalPrice,
-                "true");
-        xmlHttp.setRequestHeader("Content-type", "application/xml");
-        xmlHttp.onreadystatechange = function () {
-            if (xmlHttp.status === 200 && xmlHttp.readyState === 4) {
-                deleteAllProduct();
-            }
-        };
-        xmlHttp.send();
-    }
+    })
 }

@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
   get "/show_products_by_category/:id", to: "products#show_products_by_category"
 
+
   resources :products
   resources :categories
-  resources :carts, only: [:show, :index]
+  resources :carts
+  post '/add_to_cart', to: "carts#add_to_cart"  
   resources :order_details, only: [:create, :update, :destroy]
 
   get 'categories/:id/product', to: 'categories#show_category_product', as: :show_category_product
@@ -33,5 +35,5 @@ Rails.application.routes.draw do
 
   get '/get_brand_by_cate_id', to: "categories#get_brand_by_cate_id"
   get '/get_type_by_cate_id', to: "types#get_type_by_cate_id"
-  get '/get_subtype_by_type_id', to: "types#get_subtype_by_type_id"  
+  get '/get_subtype_by_type_id', to: "types#get_subtype_by_type_id" 
 end
