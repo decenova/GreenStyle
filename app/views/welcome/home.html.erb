@@ -16,13 +16,14 @@
         <div class="banner__item banner__item--small block--float-left">  
       <% end %>
 
-        <% if product.image_url.url %>
-          <% if product.image_url_identifier.include? Product::IMAGE_ONLINE_LINK %>
-            <%# <%= image_tag product.image_url_identifier, size: "50x50" %>
-            <div class="background" style="background-image: url(<%= product.image_url_identifier %>);"></div>
+        <% if product.image.url %>
+          <% if product.image_identifier.include? Product::IMAGE_ONLINE_LINK %>
+            <%# <%= image_tag product.image_identifier, size: "50x50" %>
+            <div class="background" style="background-image: url(<%= product.image_identifier %>);"></div>
           <% else %>
-            <%# <%= image_tag product.image_url.url, size: "50x50"  %>
-            <div class="background" style="background-image: asset-url(<%= image_url(product.image_url.url) %>);"></div>
+            <%# <%= image_tag product.image.url, size: "50x50"  %>
+            <%# bỏ asset hiện hình%>
+            <div class="background" style="background-image: url(<%= image(product.image.url) %>);"></div>
           <% end %> <!-- end identifier  -->
         <% end %> <!-- end image url -->
 
@@ -39,7 +40,5 @@
     <% end %>
     <div style="clear: both;"></div>
   </div>
-
   <%= paginate @products %> 
-
 </div>

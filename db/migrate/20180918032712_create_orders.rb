@@ -1,8 +1,7 @@
 class CreateOrders < ActiveRecord::Migration[5.2]
   def change
     create_table :orders do |t|
-      t.decimal :total_cost
-      t.datetime :order_date
+      t.decimal :total_price
       t.string :status
       t.belongs_to :user
 

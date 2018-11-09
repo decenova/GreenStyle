@@ -2,9 +2,9 @@ Rails.application.routes.draw do
   get "/show_products_by_category/:id", to: "products#show_products_by_category"
 
   resources :products
-  resources :categories do
-    
-  end
+  resources :categories
+  resources :carts, only: [:show]
+  resources :order_details, only: [:create, :update, :destroy]
 
   get 'categories/:id/product', to: 'categories#show_category_product', as: :show_category_product
 

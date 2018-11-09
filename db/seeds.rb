@@ -19,9 +19,9 @@ types.each do |type|
 end
 
 products.each_with_index do |product, index|
-	Product.create!(name: product['name'], image_url: "https://www.phongcachxanh.vn" + product['imgUrl'],
+	Product.create!(name: product['name'], image: "https://www.phongcachxanh.vn" + product['imgUrl'],
 	price: product['price'].to_i * 1000000, quantity: '100',
-	warranty: product['warranty'], category_id: product['categoryId'])
+	warranty: product['warranty'], active: true, category_id: product['categoryId'])
 	if product['types']
 			pro = Product.find(index + 1)
 			product['types'].each do |id|
@@ -36,3 +36,10 @@ categories_types.each do |item|
 		cate.types << Type.find(id)
 	end
 end
+
+#data order status
+OrderStatus.delete_all
+OrderStatus.create! id: 1, name: "In Progress"
+OrderStatus.create! id: 2, name: "Placed"
+OrderStatus.create! id: 3, name: "Shipped"
+OrderStatus.create! id: 4, name: "Cancelled"

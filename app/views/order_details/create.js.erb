@@ -1,0 +1,6 @@
+<% if @order.errors.any? || @order_detail.errors.any? %>
+  alert("not valid.")
+<% else %>
+  alert("vao day roi")
+  $(".cart-text").html("<%= escape_javascript(render 'layouts/cart_text') %>")
+<% end %>

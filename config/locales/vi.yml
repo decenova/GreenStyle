@@ -7,3 +7,10 @@ vi:
         precision: 0
         separator: ","
         unit: "VNĐ"
+  views:
+    pagination:
+      first: "Đầu"
+      last: "Cuối"
+      previous: "Trước"
+      next: "Tiếp"
+      truncate: "…"      

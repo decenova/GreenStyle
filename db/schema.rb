@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_04_025811) do
+ActiveRecord::Schema.define(version: 2018_10_20_135308) do
 
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -45,16 +45,25 @@ ActiveRecord::Schema.define(version: 2018_10_04_025811) do
   end
 
   create_table "order_details", force: :cascade do |t|
-    t.integer "quantity"
     t.decimal "price"
+    t.integer "quantity"
+    t.decimal "total_price"
     t.integer "order_id"
+    t.integer "product_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["order_id"], name: "index_order_details_on_order_id"
+    t.index ["product_id"], name: "index_order_details_on_product_id"
+  end
+
+  create_table "order_statuses", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "orders", force: :cascade do |t|
-    t.decimal "total_cost"
+    t.decimal "total_price"
     t.datetime "order_date"
     t.string "status"
     t.integer "user_id"
@@ -65,16 +74,15 @@ ActiveRecord::Schema.define(version: 2018_10_04_025811) do
 
   create_table "products", force: :cascade do |t|
     t.string "name"
-    t.string "image_url"
     t.decimal "price"
     t.integer "quantity"
     t.string "warranty"
+    t.boolean "active"
     t.integer "category_id"
-    t.integer "order_detail_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "image"
     t.index ["category_id"], name: "index_products_on_category_id"
-    t.index ["order_detail_id"], name: "index_products_on_order_detail_id"
   end
 
   create_table "products_types", id: false, force: :cascade do |t|
@@ -93,7 +101,6 @@ ActiveRecord::Schema.define(version: 2018_10_04_025811) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "username"
     t.string "email"
     t.string "name"
     t.string "phone"

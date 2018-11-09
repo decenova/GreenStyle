@@ -11,6 +11,7 @@ gem 'nokogiri'
 gem 'carrierwave'
 gem 'mini_magick'
 
+#phan trang
 gem 'kaminari'
 gem 'bootstrap4-kaminari-views'
 

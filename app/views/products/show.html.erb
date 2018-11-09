@@ -1,31 +1,38 @@
 
-<% if @product.image_url.url %>
-  <% if @product.image_url_identifier.include? Product::IMAGE_ONLINE_LINK %>
-    <%= image_tag @product.image_url_identifier, size: "200x200" %>
-  <% else %>
-    <%= image_tag @product.image_url.url, size: "200x200" %>
-  <% end %>
-<% end %>
-<br/>
-<%= @product.name %>
-<br/>
-<%= number_to_currency(@product.price) %>
-<br/>
+<div style="width: 100%; margin-top: 150px">
+  <%# <div style="width: 30%; float: left"></div> %>
+  <div style="width: 40%; float: left; margin-left: 500px">
+    <!-- show product info -->
+    <% if @product.image.url %>
+      <% if @product.image_identifier.include? Product::IMAGE_ONLINE_LINK %>
+        <%= image_tag @product.image_identifier, size: "200x200" %>
+      <% else %>
+        <%= image_tag @product.image.url, size: "200x200" %>
+      <% end %>
+    <% end %>
+    <br/>
+    <%= @product.name %>
+    <br/>
+    <%= number_to_currency(@product.price) %>
+    <br/>
+    <!-- show types -->
+    <% @pro_types.each do |t| %> <!-- pro có những type nào -->
+      <% @tmp_radio = false %> <!-- mặc đinh là kiểu text (radio false) -->
+      <% if @tmp != t.type_id %> <!-- nếu id ko trùng thì in ra tên super type -->
+        <!-- nếu trùng thì ko in tên super type -->
+        <b><%= Type.find_by_id(t.type_id).name %>:</b> <br/>
+        <% @tmp_radio = true %> <!-- nếu id trùng, chắc chắc có 2 sub_type trở lên -->
+        <!-- nên phải in ra kiểu radio, để trong lúc order -->
+      <% end %>
+      <% @tmp = t.type_id %> <!-- gán type_id cho 1 biến tạm để so sánh -->
+      - <%= t.name %> <br/>
+    <% end %>
+    Bảo hành:
+    <%= @product.warranty %> <br/>
+    <%= number_field_tag(:quantity, "1", min: 1) %>
+    <%= button_to("Mua ngay") %>
 
-<% @pro_types.each do |t| %> <!-- pro có những type nào -->
-  <% @tmp_radio = false %> <!-- mặc đinh là kiểu text (radio false) -->
-  <% if @tmp != t.type_id %> <!-- nếu id ko trùng thì in ra tên super type -->
-    <!-- nếu trùng thì ko in tên super type -->
-    <b><%= Type.find_by_id(t.type_id).name %>:</b> <br/>
-    <% @tmp_radio = true %> <!-- nếu id trùng, chắc chắc có 2 sub_type trở lên -->
-    <!-- nên phải in ra kiểu radio, để trong lúc order -->
-  <% end %>
-  <% @tmp = t.type_id %> <!-- gán type_id cho 1 biến tạm để so sánh -->
-  <%= t.name %> <br/>
-<% end %>
-Bảo hành:
-<%= @product.warranty %> <br/>
-
-<%= button_to("Mua ngay") %>
-
-<%= link_to 'Back', products_path %> | <%= link_to 'Sửa thông tin', edit_product_path %>
+    <%= link_to 'Back', products_path %> | <%= link_to 'Sửa thông tin', edit_product_path %>
+  </div>
+  <%# <div style="width: 30%; float: left"></div> %>
+</div>
