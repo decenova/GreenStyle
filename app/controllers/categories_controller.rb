@@ -23,5 +23,10 @@ class CategoriesController < ApplicationController
 		@category_type = Type.where(id: category_type_ids)
 		@products = Product.where(category_id: cate_id).newest.page params[:page]
     render 'products/index'
-  end
+	end
+	
+	def show_subcategory_product
+		@products = Product.where(category_id: params[:id]).newest.page params[:page]
+		render 'products/index'
+	end
 end

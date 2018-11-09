@@ -27,12 +27,12 @@
           <% Category.where(category_id: nil).all.each do |cate| %>
             <div class="menu__item menu__item--color-black menu__item--color-white--hover">
               <div class="menu__item__title">
-                <%= link_to "#{cate.name}", products_path %>
+                <%= link_to "#{cate.name}", show_category_product_path(cate.id) %>
               </div>
               <div class="menu__item__drop">
                 <% cate.categories.each do |sub_cate| %>
                   <div class="menu__item__drop__item">
-                    <%= link_to "#{sub_cate.name}", products_path %>
+                    <%= link_to "#{sub_cate.name}", show_subcategory_product_path(sub_cate.id) %>
                   </div>
                 <% end %> <!-- end sub_cate -->
               </div>

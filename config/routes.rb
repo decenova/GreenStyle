@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   resources :order_details, only: [:create, :update, :destroy]
 
   get 'categories/:id/product', to: 'categories#show_category_product', as: :show_category_product
-
+  get 'subcategories/:id/product', to: 'categories#show_subcategory_product', as: :show_subcategory_product
   #search
   get "/search_by_name", to: "products#search_by_name"
 
