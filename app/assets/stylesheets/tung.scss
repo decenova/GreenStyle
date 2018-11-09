@@ -1,0 +1,49 @@
+// Place all the styles related to the OrderDetails controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+button.search__button {
+  font-size: 1em;
+  background-color: #03a9f4;
+  color: #fff;
+}
+button.search__button:focus {
+  outline: none;
+}
+.btn--borderradius-right{
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.search__contain {
+  display: flex;
+  align-item: stretch;
+  position: relative;
+  padding: 10px 5px;
+  font-size: 0.9em;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+input.search__input{
+  width: 100%;
+  margin: 0px;
+  padding-left: 10px;
+  border: 1px solid #03a9f4;
+  border-radius: 20px 0 0 20px;
+  box-sizing: content-box;
+  font-size: 1em;
+}
+input.search__input:focus{
+  outline: none;
+  border: 1px solid #007dff;
+}
+.cart-div {
+  text-align: center;
+  
+}
+// add to cart
+.product-item-cart img{
+  width: 100px;
+  height: 100px;
+}

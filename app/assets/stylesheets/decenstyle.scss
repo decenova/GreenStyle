@@ -158,7 +158,15 @@ a{
 }
 
 .menu__user__login {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   text-align: right;
+}
+.menu__user__login p{
+  margin: 0px;
 }
 
 .logo_container {

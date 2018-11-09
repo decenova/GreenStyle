@@ -1,21 +1,14 @@
-<div style="width: 100%">
-  <!-- div search and phan trang -->
-  <div style="width: 100%; float: left; margin-top: 100px; text-align: center"> <!-- search -->
-    <div style="width: 50%; float: left">
-      <%= form_tag("/search_by_name", method: "get") do %>
-        <%= text_field_tag :search_name %>
-        <%= button_tag("Tìm kiếm") %>
-      <% end %>
-    </div>
-    <div style="width: 50%; float: left">
-      <%= paginate @products %>
-    </div>
-  </div>
+<div style="width: 100%"> 
 <div class="background--color-greengray">
   <div class="block--height-large"></div>
   <div class="block--height-large"></div>
+  <%= form_tag("/search_by_name", method: "get") do %>
+    <div class="search__contain">
+      <%= text_field_tag :search_name, '', {class: 'search__input'} %>
+      <%= button_tag "Tìm kiếm", {class: 'btn search__button btn--borderradius-right'} %>
+    </div>
+  <% end %>
   <%= link_to 'New Product', new_product_path %>
-  <%= paginate @products %> 
   <div class="banner__container block--margin-auto">
     <% @products.each_with_index do |product, index| %>
       <a href="<%= product_path(product.id)%>">
@@ -54,7 +47,6 @@
     <% end %>
     <div style="clear: both;"></div>
   </div>
-
   <%= paginate @products %> 
 </div>
     <!-- div search by type -->

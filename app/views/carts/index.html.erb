@@ -1,0 +1,30 @@
+<script>
+  initCart();
+  getProductFromStorage();
+</script>
+<div class="block--height-large"></div>
+<div class="block--height-large"></div>
+<div>
+  <a href="" onclick="updateCart()">Cập nhật giỏ hàng</a>
+  <a href="" onclick="deleteAllProduct()">Xóa giỏ hàng</a>
+  <a href="" onclick="checkoutCart()">Xác nhận mua</a>
+</div>
+<div class="cart-div">
+  <table id="cart-table" border="1">
+        <thead>
+            <tr>
+                <td>STT</td>
+                <td>Hình ảnh</td>
+                <td>Tên sản phẩm</td>
+                <td>Bảo hành</td>
+                <td>Số lượng</td>
+                <td>Đơn giá</td>
+                <td>Thành tiền</td>
+            </tr>
+        </thead>
+        <tbody id="my-cart-id">
+
+        </tbody>
+      </table>
+      <div class="total-div"><span id="totalPriceId">Tổng tiền: </span></div>
+</div>

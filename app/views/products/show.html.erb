@@ -1,14 +1,12 @@
 
 <div class="block--height-large"></div>
-  <div class="block--height-large"></div>
+<div class="block--height-large"></div>
 <div class="product__detail__contain">
   <div class="product__image__contain">
     <% if @product.image.url %>
       <% if @product.image_identifier.include? Product::IMAGE_ONLINE_LINK %>
-        <%# <%= image_tag product.image_identifier, size: "50x50" %>
         <div class="background" style="background-image: url(<%= @product.image_identifier %>);"></div>
       <% else %>
-        <%# <%= image_tag product.image.url, size: "50x50"  %>
         <div class="background" style="background-image: asset-url(<%= image(@product.image.url) %>);"></div>
       <% end %> <!-- end identifier  -->
     <% end %> <!-- end image url -->
@@ -32,7 +30,8 @@
     <p>
       Bảo hành: <%= @product.warranty %> <br/>
     </p>
-    <%= button_to("Mua ngay") %>
+    <%= link_to "Mua ngay", "#", :onclick => "addToCart('#{@product.id}', '#{@product.image_identifier}'
+    , '#{@product.name}', '#{@product.warranty}', '1', '#{@product.price}')" %>
   </div>
 </div>
 <%= link_to 'Back', products_path %> | <%= link_to 'Sửa thông tin', edit_product_path %>

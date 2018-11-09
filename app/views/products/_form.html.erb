@@ -34,11 +34,11 @@
     <% if action_name == 'new'%>
       <%= form.file_field :image_url %>
     <% elsif action_name == 'edit'%>
-      <% if product.image_url.url %>
-        <% if product.image_url_identifier.include? Product::IMAGE_ONLINE_LINK %>
-          <%= image_tag product.image_url_identifier, size: "100x100" %>
+      <% if product.image.url %>
+        <% if product.image_identifier.include? Product::IMAGE_ONLINE_LINK %>
+          <%= image_tag product.image_identifier, size: "100x100" %>
         <% else %>
-          <%= image_tag product.image_url.url, size: "100x100" %>
+          <%= image_tag product.image.url, size: "100x100" %>
         <% end %>
       <% end %> <!-- end elsif new -->
       <%= form.file_field :image_url %>

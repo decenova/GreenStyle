@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   resources :products
   resources :categories
-  resources :carts, only: [:show]
+  resources :carts, only: [:show, :index]
   resources :order_details, only: [:create, :update, :destroy]
 
   get 'categories/:id/product', to: 'categories#show_category_product', as: :show_category_product

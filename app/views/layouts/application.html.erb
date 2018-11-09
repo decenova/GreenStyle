@@ -12,7 +12,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body onLoad='notifyAll("<%= notice %>")'>
+  <body onload='notifyAll("<%= notice %>"); initCart();'>
     <div class="menu__bar block--fixed block--height-large block--width-full">
       <div class="menu__container">
         <div class="logo_container block--height-full">
@@ -41,17 +41,16 @@
         </div>
         <!-- user -->
         <div class="menu__user__container block--relative">
-          <div class="menu__user__login line--height-large">
+          <div class="menu__user__login">
+            <p class="text--ellipsis"><%= link_to 'Giỏ hàng', carts_path, :onclick =>  'getProductFromStorage();' %></p>
             <% if !current_user %>
-              <%= link_to 'Đăng nhập', new_user_session_path %>
+              <p class="text--ellipsis"><%= link_to 'Đăng nhập', new_user_session_path %></p>
             <% else %>
-              <%= link_to current_user.name, current_user %>|
-              <%= link_to 'Đăng xuất', destroy_user_session_path, method: 'delete' %>
+              <p class="text--ellipsis"><%= link_to current_user.name, current_user %></p>
+              <p class="text--ellipsis"><%= link_to 'Đăng xuất', destroy_user_session_path, method: 'delete' %></p>
             <% end %>
           </div>
         </div>  <!-- user -->
-        <%= link_to "Giỏ hàng", "#" %>
-        <label class="cart-text"><%= render 'layouts/cart_text' %></label>
       </div>
     </div>
     <%= yield %>
