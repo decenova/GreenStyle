@@ -1,8 +1,8 @@
 require 'carrierwave/orm/activerecord'
 class Product < ApplicationRecord
     has_and_belongs_to_many :types, :join_table => "products_types"
-    # mount_uploader :image, ImageUploader
-    # validates_processing_of :image
+    mount_uploader :image, ImageUploader
+    validates_processing_of :image
 
     has_many :order_details
     
