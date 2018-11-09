@@ -64,7 +64,7 @@ function getProductFromStorage() {
     var id, imgOnlineLink, fullName, quantity, warranty, price;
     var item, productItem;
     var index = 1;
-    let cart_div = document.getElementById('my-cart-id');
+    var cart_div = document.getElementById('my-cart-id');
     cart_div.innerText = "";
     for (item of myCartObj) {
         if (item !== null) {
