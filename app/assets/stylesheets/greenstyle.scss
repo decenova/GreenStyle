@@ -82,6 +82,8 @@ body {
 }
 .product__detail__info{
   width: 50%;
+  padding: 0px 20px;
+  box-sizing: border-box;
 }
 
 
@@ -103,4 +105,44 @@ nav>span{
 .form__contain{
   max-width: 1024px;
   margin: auto;
+}
+.order__contain{
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+  margin: auto;
+}
+.order__item{
+  display: flex;
+  width: 100%;
+  margin: 10px 0px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.order__product__info{
+  width: 100%;
+}
+.order__product__control{
+  width: 200px;
+}
+.order__product__control input[type="number"]{
+  width: 100%;
+}
+.order__total{
+
+}
+.order__info{
+  width: 100%;
+}
+table.order__table{
+  width: 100%;
+  border-collapse: collapse;
+}
+td.number{
+  text-align: right;
+}
+
+tr,td,th{
+  border: 1px solid #333;
 }

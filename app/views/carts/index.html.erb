@@ -1,30 +1,25 @@
-<script>
-  initCart();
-  getProductFromStorage();
-</script>
-<div class="block--height-large"></div>
-<div class="block--height-large"></div>
-<div>
-  <a href="" onclick="updateCart()">Cập nhật giỏ hàng</a>
-  <a href="" onclick="deleteAllProduct()">Xóa giỏ hàng</a>
-  <a href="" onclick="checkoutCart()">Xác nhận mua</a>
-</div>
-<div class="cart-div">
-  <table id="cart-table" border="1">
-        <thead>
-            <tr>
-                <td>STT</td>
-                <td>Hình ảnh</td>
-                <td>Tên sản phẩm</td>
-                <td>Bảo hành</td>
-                <td>Số lượng</td>
-                <td>Đơn giá</td>
-                <td>Thành tiền</td>
-            </tr>
-        </thead>
-        <tbody id="my-cart-id">
 
-        </tbody>
-      </table>
-      <div class="total-div"><span id="totalPriceId">Tổng tiền: </span></div>
+<div class="block--size-fullview background--color-greengray">
+<div class="block--height-large"></div>
+<div class="block--height-large"></div>
+<div class="block--fixwidth block--margin-auto">
+  <button class="btn" onclick="updateCart()">Cập nhật giỏ hàng</button>
+  <button class="btn" onclick="deleteAllProduct()">Xóa giỏ hàng</button>
+  <button class="btn" onclick="checkoutCart()">Xác nhận mua</button>
 </div>
+<div class="order__contain" >
+  <div id="my-cart-id">
+    
+  </div>  
+    <div class="order__total">
+      <h1 id="totalPriceId">Tổng tiền: </h1>
+      <button class="btn">Checkout</button>
+    </div>
+</div>
+</div>
+<script>
+  $(document).ready(()=>{
+    initCart();
+    getProductFromStorage();
+  });
+</script>
